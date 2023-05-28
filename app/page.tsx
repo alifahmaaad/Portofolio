@@ -14,7 +14,7 @@ export default function Home() {
         slidesPerView={1}
         direction="vertical"
         pagination={{ clickable: true }}
-        height={window.innerHeight}
+        // height={100}
         autoHeight={true}
         modules={[Pagination]}
         mousewheel={true}
