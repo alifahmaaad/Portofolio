@@ -4,6 +4,7 @@ import SwiperCore, { Keyboard, Mousewheel } from "swiper";
 import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
+import Slide1 from "./section/Slide1";
 
 export default function Home() {
   SwiperCore.use([Keyboard, Mousewheel]);
@@ -13,12 +14,15 @@ export default function Home() {
         slidesPerView={1}
         direction="vertical"
         pagination={{ clickable: true }}
-        height={window.innerHeight}
+        height={screen.height}
+        autoHeight={true}
         modules={[Pagination]}
         mousewheel={true}
         keyboard={true}
       >
-        <SwiperSlide> Test</SwiperSlide>
+        <SwiperSlide>
+          <Slide1 />
+        </SwiperSlide>
         <SwiperSlide> Testw\2</SwiperSlide>
       </Swiper>
     </main>

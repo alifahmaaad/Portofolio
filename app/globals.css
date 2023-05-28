@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-pagination-vertical {
+  top: 20vh !important;
+}
+.swiper-pagination {
+  pointer-events: all !important;
+}
+/* .swiper-pagination-bullet-active {
+  background: white !important;
+  height: 20px !important;
+  border-radius: 20% !important;
+} */

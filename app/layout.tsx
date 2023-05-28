@@ -29,6 +29,7 @@ export default function RootLayout({
         <head>
           <title>{changeHeadTitleByIndexSlide(slideIndex)}</title>
         </head>
+
         <body className="overflow-y-hidden">{children}</body>
       </html>
     </contextindex.Provider>
