@@ -8,10 +8,10 @@ import Slide1 from "./section/Slide1";
 import { EffectFade } from "swiper";
 import AboutMe from "./section/AboutMe";
 import { useContext } from "react";
-import { contextindex } from "./layout";
+import Contextindex from "./context";
 
 export default function Home() {
-  const { setSlideIndex } = useContext(contextindex);
+  const { setSlideIndex } = useContext(Contextindex);
   SwiperCore.use([Keyboard, Mousewheel]);
   return (
     <main>
