@@ -67,7 +67,7 @@ const Slide1 = () => {
             className="absolute border-2 rounded-full drop-shadow-2xl"
             width={250}
             height={250}
-            src="myimg.jpg"
+            src="https://alifahmaaad.github.io/Portofolio/myimg.jpg"
             alt="profile picture"
           />
         </motion.div>
