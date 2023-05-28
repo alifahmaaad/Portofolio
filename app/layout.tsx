@@ -1,10 +1,8 @@
 "use client";
-import { createContext, useState } from "react";
+import { useState } from "react";
 import "./globals.css";
-export const contextindex = createContext({
-  slideIndex: 0,
-  setSlideIndex: (i: number) => {},
-});
+import Contextindex from "./context";
+
 export default function RootLayout({
   children,
 }: {
@@ -24,7 +22,7 @@ export default function RootLayout({
     }
   };
   return (
-    <contextindex.Provider value={{ slideIndex, setSlideIndex }}>
+    <Contextindex.Provider value={{ slideIndex, setSlideIndex }}>
       <html lang="en">
         <head>
           <title>{changeHeadTitleByIndexSlide(slideIndex)}</title>
@@ -32,6 +30,6 @@ export default function RootLayout({
 
         <body className="overflow-y-hidden">{children}</body>
       </html>
-    </contextindex.Provider>
+    </Contextindex.Provider>
   );
 }
