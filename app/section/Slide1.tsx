@@ -28,7 +28,17 @@ const Slide1 = () => {
             </article>
           </motion.div>
           <div className="contents">
-            <figure className="relative w-full md:w-[20rem] h-[20rem] lg:h-full">
+            <motion.div
+              initial={{ x: "100%", y: "-100%" }}
+              whileInView={{
+                x: "0",
+                y: "0",
+                transition: {
+                  duration: 0.7,
+                },
+              }}
+              className="relative w-full md:w-[20rem] h-[20rem] lg:h-full"
+            >
               <svg
                 className="absolute -z-0 w-[22rem] h-[22rem] lg:w-[35rem] lg:h-[35rem] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
                 viewBox="0 0 200 200"
@@ -41,19 +51,11 @@ const Slide1 = () => {
                 />
               </svg>
               <motion.img
-                initial={{ x: "150%", y: "-30%" }}
-                whileInView={{
-                  x: "-50%",
-                  y: "-45%",
-                  transition: {
-                    duration: 0.7,
-                  },
-                }}
                 className="border-2   shadow-2xl w-[180px] h-[180px] lg:w-[250px] lg:h-[250px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
                 src="https://alifahmaaad.github.io/Portofolio/myimg.jpg"
                 alt="profile picture"
               />
-            </figure>
+            </motion.div>
           </div>
         </div>
       </div>
