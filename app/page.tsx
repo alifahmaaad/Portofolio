@@ -9,9 +9,11 @@ import { EffectFade } from "swiper";
 import AboutMe from "./section/AboutMe";
 import { useContext } from "react";
 import Contextindex from "./context";
-
+import { motion } from "framer-motion";
+import Project from "./section/Project";
+import WorkExp from "./section/WorkExp";
 export default function Home() {
-  const { setSlideIndex } = useContext(Contextindex);
+  const { slideIndex, setSlideIndex } = useContext(Contextindex);
   SwiperCore.use([Keyboard, Mousewheel]);
   return (
     <main>
@@ -25,6 +27,7 @@ export default function Home() {
         keyboard={true}
         speed={100}
         onRealIndexChange={(swiper) => setSlideIndex(swiper.realIndex)}
+        className="!h[100vh]"
       >
         <SwiperSlide>
           <Slide1 />
@@ -32,7 +35,12 @@ export default function Home() {
         <SwiperSlide>
           <AboutMe />
         </SwiperSlide>
-        <SwiperSlide>what I've been working on</SwiperSlide>
+        <SwiperSlide>
+          <Project />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WorkExp />
+        </SwiperSlide>
       </Swiper>
     </main>
   );

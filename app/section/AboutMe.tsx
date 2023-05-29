@@ -1,30 +1,17 @@
 import { motion } from "framer-motion";
+import Navcomp from "./component/Navcomp";
 const AboutMe = () => {
   return (
-    <div>
-      <nav className="sticky z-100">
-        <div className="flex justify-between pt-4 pb-0 md:py-4  px-4 ">
-          <span className="font-bold text-[#4942E4] cherry  text-md lg:text-2xl">
-            A
-          </span>
-          <div className="flex justify-between gap-4 font-bold text-[#4942E4]  text-sm lg:text-lg px-0 lg:px-[2rem]">
-            <motion.a
-              whileHover={{ scale: 1.2 }}
-              className="hover:cursor-pointer hover:text-gray-500"
-            >
-              Download Resume
-            </motion.a>
-          </div>
-        </div>
-      </nav>
+    <div className="h-full">
+      <Navcomp />
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
         className="flex items-center justify-center h-[100vh] "
       >
-        <div className="px-4 lg:px-[30rem]">
-          <span className="text-[#4942E4] font-bold text-5xl lg:text-7xl">
+        <div className="px-4 xl:px-[25rem]">
+          <span className="text-[#0b0ed4] font-bold text-5xl lg:text-7xl">
             About Me.
           </span>
           <span className="block text-gray-500 py-5">
