@@ -2,7 +2,7 @@ import Button from "./component/Button";
 import { motion } from "framer-motion";
 import Navcomp from "./component/Navcomp";
 
-const Slide1 = () => {
+const Slide1 = (props: { slideto?: Function }) => {
   return (
     <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% h-full">
       <div className="relative h-[100vh] bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
@@ -23,7 +23,7 @@ const Slide1 = () => {
               </span>
 
               <span className="block pt-5">
-                <Button buttonval="Let's Talk" />
+                <Button funct={props.slideto} buttonval="Let's Talk" />
               </span>
             </article>
           </motion.div>
