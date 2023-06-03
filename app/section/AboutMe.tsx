@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div className="h-full">
       <Navcomp />
-      <motion.div
+      <motion.section
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
@@ -26,7 +26,7 @@ const AboutMe = () => {
             maxime accusamus officia laudantium cupiditate.
           </span>
         </div>
-      </motion.div>
+      </motion.section>
     </div>
   );
 };
