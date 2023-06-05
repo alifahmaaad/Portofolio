@@ -10,7 +10,7 @@ const WorkExp = () => {
           My Work Experience.
         </span>
         <Jobcard
-          imgurl="/javan.png"
+          imgurl="/Javan.png"
           role="Software Developer (PHP) - Intern"
           year="2021"
           companie="PT.Javan Cipta Solusi"
