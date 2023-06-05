@@ -19,7 +19,7 @@ const Slide1 = (props: { slideto?: Function }) => {
                 Ahmad Alif <br /> Sofian
               </span>
               <span className="text-white font-bold text-3xl">
-                A Frontend Developer.
+                A Software Developer.
               </span>
 
               <span className="block pt-5">
