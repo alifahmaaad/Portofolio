@@ -4,29 +4,29 @@ const AboutMe = () => {
   return (
     <div className="h-full">
       <Navcomp />
-      <motion.div
+      <motion.section
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
-        className="flex items-center justify-center h-[100vh] "
+        className="flex items-center justify-center h-[100svh]"
       >
         <div className="px-4 xl:px-[25rem]">
           <span className="text-[#0b0ed4] font-bold text-5xl lg:text-7xl">
             About Me.
           </span>
           <span className="block text-gray-500 py-5">
-            My name is Ahmad Alif Sofian im fresh grasudasdwn dwadhawda
-            jwhdahidwaioldwa dhawiodhaw iahwdoiawhda dhwaidhaowilhd whdiahda
-            ihwda Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quasi, nam repellat assumenda dolorum modi aperiam magnam facilis.
-            Perspiciatis non, sit error suscipit blanditiis itaque voluptatum ut
-            esse in quod officia.lorem Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Et odio quidem dolor autem a. Est debitis nostrum
-            necessitatibus, placeat consequatur quod veniam in corporis odio
-            maxime accusamus officia laudantium cupiditate.
+            My name is Ahmad Alif Sofian, and i am a fresh graduate Computer
+            Science Bachelor from Institut Teknologi Sumatera (GPA:3.61), I have
+            an interest and skill in software development, especially in
+            frontend development, I have worked on several projects using
+            javascript libraries such as ReactJS, Redux, React Router, Context
+            etc. Frontend frameworks like React Native, NextJS, Laravel ,etc.
+            CSS frameworks like Tailwind, Material UI, and Bootstrap. Now, I
+            want to improve my skills by studying such as CSS, HTML, Frontend
+            Framework, Javascript and Finding a job that supports my interests.
           </span>
         </div>
-      </motion.div>
+      </motion.section>
     </div>
   );
 };
