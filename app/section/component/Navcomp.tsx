@@ -29,7 +29,7 @@ const Navcomp = () => {
           <motion.a
             whileHover={{ scale: 1.2 }}
             className={"hover:cursor-pointer hover:text-gray-500"}
-            href="Resume-Ahmad Alif Sofian.pdf"
+            href="https://alifahmaaad.github.io/Portofolio/Resume-Ahmad Alif Sofian.pdf"
             target="_blank"
           >
             Check My CV
