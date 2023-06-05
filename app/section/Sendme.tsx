@@ -28,8 +28,8 @@ const Sendme = () => {
   return (
     <div className="h-full bg-[#0b0ed4]">
       <Navcomp />
-      <div className="h-[100vh] bg-white flex flex-col justify-between">
-        <div className="h-[85vh] flex items-center px-[2rem] md:px-[10rem] lg:px-[20rem]">
+      <div className="h-[100svh] bg-white flex flex-col justify-between">
+        <div className="h-[85svh] flex items-center px-[2rem] md:px-[10rem] lg:px-[20rem]">
           <div className="w-screen">
             <header className="font-bold text-[#0b0ed4] text-5xl lg:text-7xl py-5   ">
               <h1 className="text-ellipsis">Lets Talk.</h1>
@@ -75,7 +75,7 @@ const Sendme = () => {
             </div>
           </div>
         </div>
-        <footer className="h-[15vh] bg-[#0b0ed4] flex flex-col justify-center items-center">
+        <footer className="h-[15svh] bg-[#0b0ed4] flex flex-col justify-center items-center">
           <div className="text-white flex flex-wrap gap-3 px-4">
             <span className="px-2">
               <a className="flex gap-2" target="_blank" href="#">
@@ -120,17 +120,19 @@ const Sendme = () => {
                 <p className="text-sm">081270003726</p>
               </a>
             </span>
-            <span className="flex px-2 gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="white"
-              >
-                <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
-              </svg>
-              <p className="text-sm">alif12sofian@gmail.com</p>
+            <span className="px-2">
+              <a className="flex gap-2" href="mailto:alif12sofian@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
+                </svg>
+                <p className="text-sm">alif12sofian@gmail.com</p>
+              </a>
             </span>
           </div>
           <div className="text-white ">Created By - Ahmad Alif Sofian 2023</div>
