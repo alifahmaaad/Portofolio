@@ -16,13 +16,13 @@ const Project = () => {
             <div className="container flex flex-wrap justify-center gap-[1rem] sm:gap-[2rem] py-5 m-0 ">
               <Cardbox
                 text="A Desktop App using Tauri App, Material UI, ReactJS, React Redux, React Router, bcryptjs, tauri-plugin-sql, sqlite database, for manage financial data on Yayasan Nurul ilmi Aini."
-                imgurl="/nurulilmi.png"
+                imgurl="/nurulIlmi.png"
                 title="Sistem Pembayaran Yayasan Nurul Ilmi Aini"
               />
 
               <Cardbox
                 text="A Website with NextJS , Tailwind CSS, FramerMotion, and SwiperJS. its Single Page Application that show my personal portofolio and information about me."
-                imgurl="/Porto.jpg"
+                imgurl="/porto.jpg"
                 title="Personal Portofolio Website"
               />
 
