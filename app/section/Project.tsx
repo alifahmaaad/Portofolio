@@ -9,11 +9,11 @@ const Project = () => {
         <Navcomp />
         <section className="flex items-center h-full px-0  md:px-[2rem]   2xl:px-[25rem]">
           <div>
-            <header className="font-bold text-white text-5xl lg:text-7xl py-3">
+            <header className="font-bold text-white text-2xl md:text-5xl lg:text-7xl py-3">
               <h1 className="text-ellipsis">What I've been working on.</h1>
               <h3 className="text-xl font-normal pt-1 px-2">My Project </h3>
             </header>
-            <div className="container flex flex-wrap justify-center gap-[1rem] sm:gap-[2rem] py-5 m-0 ">
+            <div className="container flex flex-wrap justify-center gap-[0.5rem] sm:gap-[2rem] py-1 sm:py-5 m-0 ">
               <Cardbox
                 text="A Desktop App using Tauri App, Material UI, ReactJS, React Redux, React Router, bcryptjs, tauri-plugin-sql, sqlite database, for manage financial data on Yayasan Nurul ilmi Aini."
                 imgurl="/nurulIlmi.png"
@@ -38,7 +38,7 @@ const Project = () => {
                 title="Urdailyhealth Website"
               />
             </div>
-            {/* <Button buttonval="See More" /> */}
+            <Button buttonval="See More" />
           </div>
         </section>
       </div>

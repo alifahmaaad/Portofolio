@@ -11,7 +11,7 @@ const AboutMe = () => {
         className="flex items-center justify-center h-[100svh]"
       >
         <div className="px-4 xl:px-[25rem]">
-          <span className="text-[#0b0ed4] font-bold text-5xl lg:text-7xl">
+          <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl">
             About Me.
           </span>
           <span className="block text-gray-500 py-5">
