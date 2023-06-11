@@ -1,8 +1,12 @@
+import { useEffect, useState } from "react";
 import Jobcard from "./component/Jobcard";
 import Navcomp from "./component/Navcomp";
 import DataWorkExp from "./DataWorkExp";
 const WorkExp = () => {
-  const cardmaxindex = window.innerWidth >= 768 ? 2 : 1;
+  useEffect(() => {
+    SetCardmaxindex(window.innerWidth >= 768 ? 6 : 4);
+  }, []);
+  const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
     <div className="h-full">
       <Navcomp />

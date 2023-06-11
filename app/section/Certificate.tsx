@@ -1,10 +1,14 @@
+import { useEffect, useState } from "react";
 import DataCertificate from "./DataCertificate";
 import Button from "./component/Button";
 import Cardbox from "./component/Cardbox";
 import Navcomp from "./component/Navcomp";
 
 const Certificate = () => {
-  const cardmaxindex = window.innerWidth >= 768 ? 6 : 4;
+  useEffect(() => {
+    SetCardmaxindex(window.innerWidth >= 768 ? 6 : 4);
+  }, []);
+  const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
     <div className="h-full bg-[#0b0ed4]">
       <div className="h-[100svh] w-[100svw]">
