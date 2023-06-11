@@ -1,7 +1,8 @@
 import Jobcard from "./component/Jobcard";
 import Navcomp from "./component/Navcomp";
-
+import DataWorkExp from "./DataWorkExp";
 const WorkExp = () => {
+  const cardmaxindex = window.innerWidth >= 768 ? 2 : 1;
   return (
     <div className="h-full">
       <Navcomp />
@@ -9,15 +10,20 @@ const WorkExp = () => {
         <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl py-[2rem]">
           My Work Experience.
         </span>
-        <Jobcard
-          imgurl="/Javan.png"
-          role="Software Developer (PHP) - Intern"
-          year="2021"
-          companie="PT.Javan Cipta Solusi"
-          text="Assigned to a company project to build and develop the website.
-Developed an website using laravel PHP in backend with PostgreSQL and VueJS in frontend.
-Coordinate with other team members, do the tasks assigned by the project manager and make sure the product meets the requirements and quality standards."
-        />
+        <div>
+          {Object.entries(DataWorkExp.DataWorkExp)
+            .slice(0, cardmaxindex)
+            .map(([key, i]) => (
+              <Jobcard
+                key={key}
+                imgurl={i.imgurl}
+                role={i.role}
+                year={i.year}
+                companie={i.companie}
+                text={i.text}
+              />
+            ))}
+        </div>
       </div>
     </div>
   );
