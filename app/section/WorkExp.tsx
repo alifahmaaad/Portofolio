@@ -4,7 +4,9 @@ import Navcomp from "./component/Navcomp";
 import DataWorkExp from "./DataWorkExp";
 const WorkExp = () => {
   useEffect(() => {
-    SetCardmaxindex(window.innerWidth >= 768 ? 6 : 4);
+    if (typeof window !== "undefined") {
+      SetCardmaxindex(window.innerWidth >= 768 ? 2 : 1);
+    }
   }, []);
   const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
