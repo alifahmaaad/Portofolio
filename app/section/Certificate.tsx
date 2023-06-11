@@ -6,7 +6,9 @@ import Navcomp from "./component/Navcomp";
 
 const Certificate = () => {
   useEffect(() => {
-    SetCardmaxindex(window.innerWidth >= 768 ? 6 : 4);
+    if (typeof window !== "undefined") {
+      SetCardmaxindex(window.innerWidth >= 768 ? 6 : 4);
+    }
   }, []);
   const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (

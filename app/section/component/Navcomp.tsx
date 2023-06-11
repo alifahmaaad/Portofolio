@@ -1,17 +1,11 @@
 import Contextindex from "@/app/context";
 import { motion } from "framer-motion";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 
 const Navcomp = () => {
-  useEffect(() => {
-    Setpathname(window.location.pathname);
-    // console.log(window.location.pathname);
-  }, []);
-  const [pathname, Setpathname] = useState<String>();
   const { slideIndex } = useContext(Contextindex);
   const colortext: string =
-    (slideIndex == 0 || slideIndex == 2 || slideIndex == 4) &&
-    pathname == "/Portofolio"
+    slideIndex == 0 || slideIndex == 2 || slideIndex == 4
       ? "text-white "
       : "text-[#0b0ed4] ";
   const colortextforSlide1: string =
