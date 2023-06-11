@@ -5,7 +5,8 @@ import { useContext } from "react";
 const Navcomp = () => {
   const { slideIndex } = useContext(Contextindex);
   const colortext: string =
-    slideIndex == 0 || slideIndex == 2 || slideIndex == 4
+    (slideIndex == 0 || slideIndex == 2 || slideIndex == 4) &&
+    window.location.pathname == "/Portofolio"
       ? "text-white "
       : "text-[#0b0ed4] ";
   const colortextforSlide1: string =
@@ -17,9 +18,12 @@ const Navcomp = () => {
   return (
     <nav className="absolute w-full z-100">
       <div className="flex justify-between pt-4 pb-0 md:py-4  px-4 ">
-        <span className={colortext + "font-bold cherry text-md lg:text-2xl"}>
+        <a
+          className={colortext + "font-bold cherry text-md lg:text-2xl"}
+          href="https://alifahmaaad.github.io/Portofolio/"
+        >
           A
-        </span>
+        </a>
         <div
           className={
             colortextforSlide1 +
