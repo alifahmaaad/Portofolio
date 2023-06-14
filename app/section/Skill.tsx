@@ -12,7 +12,7 @@ const Skill = () => {
         className="h-[100svh] flex flex-col px-[1rem] xl:px-[20rem] justify-center items-center"
       >
         <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl">
-          Skills
+          Skills.
         </span>
         <div className="flex flex-wrap justify-center items-center gap-6 py-2 lg:py-10">
           <Skillcard src="react.webp" text="React" />
