@@ -17,7 +17,7 @@ const Skill = () => {
         <div className="flex flex-wrap justify-center items-center gap-6 py-2 lg:py-10">
           <Skillcard src="react.webp" text="React" />
           <Skillcard src="redux.png" text="Redux" />
-          <Skillcard src="javascript.png" text="JavaScript" />
+          <Skillcard src="JavaScript.png" text="JavaScript" />
           <Skillcard src="typescript.png" text="TypeScript" />
           <Skillcard src="tailwind.png" text="Tailwind CSS" />
           <Skillcard src="mui.png" text="Material UI" />
