@@ -16,7 +16,15 @@ export default function RootLayout({
       case 1:
         return "Portofolio-About Me";
       case 2:
+        return "Portofolio-Skills";
+      case 3:
         return "Portofolio-My Project";
+      case 4:
+        return "Portofolio-My Work Experience";
+      case 5:
+        return "Portofolio-My Certificates";
+      case 6:
+        return "Portofolio-Lets Talk";
       default:
         break;
     }

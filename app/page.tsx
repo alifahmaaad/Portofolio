@@ -14,6 +14,7 @@ import Project from "./section/Project";
 import WorkExp from "./section/WorkExp";
 import Certificate from "./section/Certificate";
 import Sendme from "./section/Sendme";
+import Skill from "./section/Skill";
 export default function Home() {
   const { slideIndex, setSlideIndex } = useContext(Contextindex);
   SwiperCore.use([Keyboard, Mousewheel]);
@@ -44,6 +45,9 @@ export default function Home() {
         </SwiperSlide>
         <SwiperSlide>
           <AboutMe />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Skill />
         </SwiperSlide>
         <SwiperSlide>
           <Project />
