@@ -5,7 +5,7 @@ const Skillcard = (props: { src: string; text: string }) => {
       <div className="h-[5rem] lg:h-[11rem] flex">
         <img
           className="w-full h-[5rem] lg:h-auto self-center"
-          src={props.src}
+          src={"https://alifahmaaad.github.io/Portofolio" + props.src}
         />
       </div>
       <div className="items-center flex justify-center text-sm lg:text-lg font-bold ">
