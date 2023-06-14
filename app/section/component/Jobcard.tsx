@@ -1,3 +1,4 @@
+import "../../cardbox.css";
 const Jobcard = (props: {
   imgurl?: string;
   text: string;
@@ -9,7 +10,7 @@ const Jobcard = (props: {
     <div className="flex flex-col md:flex-row items-center md:min-h-[5rem] gap-[1rem] py-3">
       <img
         src={"https://alifahmaaad.github.io/Portofolio" + props.imgurl}
-        className="h-full w-[15rem] md:w-[10rem]"
+        className="h-full w-[15rem] md:w-[10rem] zoom"
       />
       <div className="flex flex-col">
         <h1 className="font-bold text-xl">{props.role}</h1>

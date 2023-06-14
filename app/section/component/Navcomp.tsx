@@ -5,13 +5,13 @@ import { useContext } from "react";
 const Navcomp = () => {
   const { slideIndex } = useContext(Contextindex);
   const colortext: string =
-    slideIndex == 0 || slideIndex == 2 || slideIndex == 4
+    slideIndex == 0 || slideIndex == 3 || slideIndex == 5
       ? "text-white "
       : "text-[#0b0ed4] ";
   const colortextforSlide1: string =
     slideIndex == 0
       ? "text-white md:text-[#0b0ed4] "
-      : slideIndex == 2 || slideIndex == 4
+      : slideIndex == 3 || slideIndex == 5
       ? "text-white "
       : "text-[#0b0ed4] ";
   return (
