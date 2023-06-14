@@ -3,12 +3,29 @@
 @tailwind utilities;
 .swiper-pagination-vertical {
   top: 20vh !important;
+  padding: 1rem;
 }
-.swiper-pagination {
-  pointer-events: all !important;
+.swiper-pagination-bullet {
+  /* pointer-events: all !important; */
+  border-radius: 100% !important;
+  border: 2px solid white !important;
+  width: 15px !important;
+  height: 15px !important;
+  transition-duration: 2500ms;
+  background: gray !important;
+  opacity: none !important;
 }
-/* .swiper-pagination-bullet-active {
-  background: white !important;
-  height: 20px !important;
+.swiper-pagination-bullet:active {
+  background: #0b0ed4 !important;
+}
+.swiper-pagination-bullet-active {
+  transform: rotate(135deg) scale(1.2);
+  background: #0b0ed4 !important;
   border-radius: 20% !important;
-} */
+}
+@media screen and (max-width: 500px) {
+  .swiper-pagination-vertical {
+    top: 20vh !important;
+    padding: 0.5rem;
+  }
+}
