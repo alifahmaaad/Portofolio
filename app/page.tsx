@@ -22,7 +22,7 @@ export default function Home() {
   const slidetotalk = () => {
     console.log("halo bang");
     if (refswiper.current != null) {
-      refswiper.current.swiper.slideTo(5);
+      refswiper.current.swiper.slideTo(6);
     }
   };
   return (
