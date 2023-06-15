@@ -22,6 +22,7 @@ const AllCertificate = () => {
                     imgurl={i.imgurl}
                     text={i.text}
                     title={i.title}
+                    link={i.link}
                   />
                 )
               )}

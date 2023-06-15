@@ -52,21 +52,21 @@
     "id": 8,
     "title": "Belajar Prinsip Pemrograman SOLID",
     "text": "understand how to write good code with the OOP (object-oriented programming) paradigm, understand the SOLID principle as a solution that can be used to solve the problem.",
-    "imgurl": "/coursera.png",
+    "imgurl": "/dicoding.webp",
     "link": "https://www.dicoding.com/certificates/MRZMQY9WNPYQ"
   },
   {
     "id": 9,
     "title": "Belajar dasar pemrograman Web",
     "text": "learn basic web programming, learn about HTML and CSS as the foundation for making websites. At the end of the training, create a simple website using programming code.",
-    "imgurl": "/coursera.png",
+    "imgurl": "/dicoding.webp",
     "link": "https://www.dicoding.com/certificates/1OP8D70K2PQK"
   },
   {
     "id": 10,
     "title": "Belajar Membuat Aplikasi Android untuk Pemula",
     "text": "Introduction to Android Studio, creating simple applications, learning various types of intents, learning various types of layouts, learn to use styles and themes and learn about recyclerview and final project submission in the form of an Android-based application",
-    "imgurl": "/coursera.png",
+    "imgurl": "/dicoding.webp",
     "link": "https://www.dicoding.com/certificates/1RXY4W5J3PVM"
   }
 ]
