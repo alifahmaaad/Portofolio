@@ -1,6 +1,4 @@
 "use client";
-import "swiper/css";
-import "swiper/css/pagination";
 import Slide1 from "./section/Slide1";
 import AboutMe from "./section/AboutMe";
 import Project from "./section/Project";
