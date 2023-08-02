@@ -1,13 +1,15 @@
+import { useRef } from "react";
 import Button from "./component/Button";
 import { motion } from "framer-motion";
-import Navcomp from "./component/Navcomp";
 
-const Slide1 = (props: { slideto?: Function }) => {
+const Slide1 = () => {
+  const executeScroll = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   return (
-    <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% h-full">
-      <div className="relative h-[100vh] bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
-        <Navcomp />
-        <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center py-4 h-full ">
+    <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% min-h-[100svh] h-full overflow-x-hidden">
+      <div className="relative min-h-[100svh]  bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
+        <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center py-4 min-h-[100svh] ">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -23,7 +25,7 @@ const Slide1 = (props: { slideto?: Function }) => {
               </span>
 
               <span className="block pt-5">
-                <Button funct={props.slideto} buttonval="Let's Talk" />
+                <Button funct={executeScroll} buttonval="Let's Talk" />
               </span>
             </article>
           </motion.div>

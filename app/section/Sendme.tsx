@@ -1,5 +1,4 @@
 import emailjs from "@emailjs/browser";
-import Navcomp from "./component/Navcomp";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 const Sendme = () => {
@@ -23,13 +22,11 @@ const Sendme = () => {
         }
       );
   };
-
   const form = useRef<HTMLFormElement>(null);
   return (
     <div className="h-full bg-[#0b0ed4]">
-      <Navcomp />
-      <div className="h-[100svh] bg-white flex flex-col justify-between">
-        <div className="h-[85svh] flex items-center px-[2rem] md:px-[10rem] lg:px-[20rem]">
+      <div className="min-h-[100svh] bg-white flex flex-col justify-between">
+        <div className="min-h-[85svh] flex items-center px-[2rem] md:px-[10rem] lg:px-[20rem]">
           <div className="w-screen">
             <header className="font-bold text-[#0b0ed4] text-5xl lg:text-7xl py-5   ">
               <h1 className="text-ellipsis">Lets Talk.</h1>
