@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import Jobcard from "./component/Jobcard";
 import DataWorkExp from "./DataWorkExp";
 const WorkExp = () => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      SetCardmaxindex(window.innerWidth >= 768 ? 2 : 1);
-    }
-  }, []);
-  const [cardmaxindex, SetCardmaxindex] = useState<number>();
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     SetCardmaxindex(window.innerWidth >= 768 ? 2 : 1);
+  //   }
+  // }, []);
+  // const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
     <div className="h-full">
       <div className="min-h-[100svh] flex flex-col px-[2rem] xl:px-[20rem] justify-center items-center">
@@ -16,7 +16,7 @@ const WorkExp = () => {
         </span>
         <div>
           {Object.entries(DataWorkExp.DataWorkExp)
-            .slice(0, cardmaxindex)
+            // .slice(0, cardmaxindex)
             .map(([key, i]) => (
               <Jobcard
                 key={key}

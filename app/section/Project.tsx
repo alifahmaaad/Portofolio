@@ -28,6 +28,8 @@ const Project = () => {
                     imgurl={i.imgurl}
                     text={i.text}
                     title={i.title}
+                    link={i.link != undefined ? i.link : undefined}
+                    linktext={i.link != undefined ? "See Live!" : undefined}
                   />
                 ))}
             </div>

@@ -27,6 +27,7 @@ const Certificate = () => {
                     text={i.text}
                     title={i.title}
                     link={i.link}
+                    linktext="See Credential"
                   />
                 ))}
             </div>
