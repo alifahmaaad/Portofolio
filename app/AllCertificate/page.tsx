@@ -24,6 +24,7 @@ const AllCertificate = () => {
                     text={i.text}
                     title={i.title}
                     link={i.link}
+                    linktext="See Credential!"
                   />
                 )
               )}

@@ -10,7 +10,7 @@ const Cardbox = (props: {
     <div className="bg-white text-gray-700 text-xs md:text-normal w-72 h-[16rem] sm:h-auto md:min-h-[10rem] shadow-lg rounded-md overflow-hidden zoom relative">
       <a href={props.link}>
         {props.link && (
-          <div className="absolute flex items-center justify-center w-full h-full opacity-0 hover:opacity-70 bg-black text-white font-bold">
+          <div className="absolute flex items-center justify-center w-full h-full opacity-0 hover:opacity-100 bg-opacity-60 bg-black text-white font-bold text-xl">
             {props.linktext}
           </div>
         )}
