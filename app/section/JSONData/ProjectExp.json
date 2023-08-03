@@ -15,7 +15,8 @@
     "id": 3,
     "text": "A mobile application with React Native as a Frontend and Laravel 8 as a Backend, used as place for merchants and consumer to show information of product, buy and sell cakes.  Role as a Team Leader, Backend and Frontend in developement.",
     "imgurl": "/Naka.png",
-    "title": "Naka Marketplace"
+    "title": "Naka Marketplace",
+    "link": "/NakaMarketplace.apk"
   },
   {
     "id": 4,
