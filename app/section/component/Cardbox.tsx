@@ -18,7 +18,7 @@ const Cardbox = (props: {
         <div className="flex justify-center">
           <img
             src={"https://alifahmaaad.github.io/Portofolio" + props.imgurl}
-            className="w-[10rem] lg:w-full h-[5rem] lg:h-[10rem] self-center my-2 lg:my-0"
+            className="h-[8rem] w-[8rem] sm:w-[10rem] sm:h-[10rem] self-center my-2 lg:my-0 aspect-square object-contain"
           />
         </div>
         <div className="p-2 px-2 md:px-4">

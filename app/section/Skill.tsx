@@ -2,12 +2,12 @@ import Skillcard from "./component/Skillcard";
 import { motion } from "framer-motion";
 const Skill = () => {
   return (
-    <div className="h-full pb-[10rem]">
+    <div className="h-full pb-[10rem] min-h-[50svh]">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className=" flex flex-col px-[1rem] xl:px-[20rem] justify-center items-center"
+        className=" flex flex-col container mx-auto px-4 justify-center items-center min-h-[50svh]"
       >
         <div className="flex">
           <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl">

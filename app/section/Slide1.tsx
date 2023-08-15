@@ -7,20 +7,20 @@ const Slide1 = () => {
     window.scrollTo(0, document.body.scrollHeight);
   };
   return (
-    <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% min-h-[100svh] h-full overflow-x-hidden">
-      <div className="min-h-[100svh]  bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
-        <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center py-4 min-h-[100svh] ">
+    <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% min-h-[50svh] h-full overflow-x-hidden">
+      <div className="min-h-[50svh]  bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
+        <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center py-4 min-h-[50svh] ">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             <article className="nama px-[5rem] contents ">
-              <span className="flex py-4 text-white  font-black text-5xl lg:text-7xl test">
+              <span className="flex py-4 text-white  font-black text-2xl md:text-5xl lg:text-7xl test">
                 Hi! I'm <br />
                 Ahmad Alif <br /> Sofian
               </span>
-              <span className="text-white font-bold text-3xl">
+              <span className="text-white font-bold text-xl md:text-3xl">
                 A Software Developer.
               </span>
 
@@ -51,7 +51,7 @@ const Slide1 = () => {
                   duration: 0.7,
                 },
               }}
-              className=" w-[280px] h-[280px] lg:w-[500px] lg:h-[500px] mix-blend-multiply"
+              className=" w-[19rem] h-[19rem] lg:w-[23rem] lg:h-[23rem] mix-blend-multiply"
               src="https://alifahmaaad.github.io/Portofolio/profile-pic.png"
               alt="profile picture"
             />

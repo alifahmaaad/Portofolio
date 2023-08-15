@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 const AboutMe = () => {
   return (
-    <div className="h-full">
+    <div className="h-full min-h-[50svh]">
       <motion.section
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
-        className="flex items-center justify-center "
+        className="flex items-center justify-center container mx-auto px-4"
       >
-        <div className="px-4 xl:px-[25rem] py-[10rem]">
+        <div className="px-4 py-4 md:py-[8rem]">
           <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl">
             About Me.
           </span>
-          <span className="block text-gray-500 py-5 font-bold">
+          <span className="block py-5 font-bold text-sm md:text-lg">
             My name is Ahmad Alif Sofian, and i am a fresh graduate Computer
             Science Bachelor from Institut Teknologi Sumatera (GPA:3.61), I have
             an interest and skills in software development, in the past few
