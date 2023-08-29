@@ -12,10 +12,10 @@ const Project = () => {
   const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
     <div className="h-full bg-[#0b0ed4]">
-      <div className="min-h-[100svh] py-10">
-        <section className="flex items-center h-full min-h-[100svh] container mx-auto px-4">
+      <div className="min-h-[100svh] py-10 ">
+        <section className="flex items-center justify-center h-full min-h-[100svh] container mx-auto px-4 max-w-[60rem]">
           <div className="w-full">
-            <header className="font-bold text-white text-2xl md:text-5xl lg:text-7xl py-3">
+            <header className="font-bold text-white text-xl md:text-3xl lg:text-5xl py-3">
               <h1 className="text-ellipsis">What I've been working on.</h1>
               <h3 className="text-xl font-normal pt-1 px-2">Projects </h3>
             </header>

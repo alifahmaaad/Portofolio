@@ -10,25 +10,21 @@ const Slide1 = () => {
     <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% min-h-[50svh] h-full overflow-x-hidden">
       <div className="min-h-[50svh]  bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
         <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center py-4 min-h-[50svh] ">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+          <div>
             <article className="nama px-[5rem] contents ">
-              <span className="flex py-4 text-white  font-black text-2xl md:text-5xl lg:text-7xl test">
+              <span className="flex py-4 text-white  font-black text-xl md:text-3xl lg:text-5xl">
                 Hi! I'm <br />
                 Ahmad Alif <br /> Sofian
               </span>
-              <span className="text-white font-bold text-xl md:text-3xl">
-                A Software Developer.
-              </span>
+              <div className="text-white font-bold text-xl md:text-3xl typewriter flex items-start">
+                <h2>Software Engineer.</h2>
+              </div>
 
               <span className="block pt-5">
                 <Button funct={executeScroll} buttonval="Let's Talk" />
               </span>
             </article>
-          </motion.div>
+          </div>
           <div className=" w-full lg:h-full contents ">
             {/* <svg
                 className="absolute -z-0 w-[22rem] h-[22rem] lg:w-[35rem] lg:h-[35rem] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
