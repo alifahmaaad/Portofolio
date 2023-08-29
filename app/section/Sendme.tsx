@@ -26,9 +26,9 @@ const Sendme = () => {
   return (
     <div className="h-full bg-[#0b0ed4]">
       <div className="min-h-[100svh] bg-white flex flex-col justify-between">
-        <div className="min-h-[85svh] flex items-center container mx-auto px-4">
-          <div className="w-full">
-            <header className="font-bold text-[#0b0ed4] text-5xl lg:text-7xl py-5   ">
+        <div className="min-h-[85svh] flex items-center container mx-auto px-4 justify-center">
+          <div className="w-full max-w-[35rem]">
+            <header className="font-bold text-[#0b0ed4] text-xl md:text-3xl lg:text-5xl py-5   ">
               <h1 className="text-ellipsis">Lets Talk.</h1>
             </header>
             <div className="block">

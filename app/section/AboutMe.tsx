@@ -9,17 +9,16 @@ const AboutMe = () => {
         className="flex items-center justify-center container mx-auto px-4"
       >
         <div className="px-4 py-4 md:py-[8rem]">
-          <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl">
+          <span className="text-[#0b0ed4] font-bold text-xl md:text-3xl lg:text-5xl">
             About Me.
           </span>
-          <span className="block py-5 font-bold text-sm md:text-lg">
-            My name is Ahmad Alif Sofian, and i am a fresh graduate Computer
-            Science Bachelor from Institut Teknologi Sumatera (GPA:3.61), I have
-            an interest and skills in software development, in the past few
-            months I have focused myself on learning more about the JavaScript,
-            especially on the ReactJs and ExpressJs frameworks and until now I
-            look for jobs according to my interests and skills so I can
-            implement my previous experience in the world of work.
+          <span className="block py-5 font-serif text-sm md:text-lg max-w-[35rem]">
+            Fresh graduate Computer Science Bachelor from Institut Teknologi
+            Sumatera (GPA:3.61), Interest in{" "}
+            <b className="font-semibold text-[#0b0ed4]">software Enginner</b>,I
+            usually develop Javascript and interest learn technologies that can
+            improve my skills. My aim is to be able develop digitally products
+            that have a positive impact on the environment.
           </span>
         </div>
       </motion.section>

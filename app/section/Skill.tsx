@@ -4,13 +4,13 @@ const Skill = () => {
   return (
     <div className="h-full pb-[10rem] min-h-[50svh]">
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className=" flex flex-col container mx-auto px-4 justify-center items-center min-h-[50svh]"
+        className=" flex flex-col container mx-auto px-4 justify-center items-center min-h-[50svh] max-w-[60rem]"
       >
         <div className="flex">
-          <span className="text-[#0b0ed4] font-bold text-2xl sm:text-5xl lg:text-7xl">
+          <span className="text-[#0b0ed4] font-bold text-xl md:text-3xl lg:text-5xl">
             Skills.
           </span>
         </div>
@@ -26,6 +26,8 @@ const Skill = () => {
           <Skillcard src="bootstrap.png" text="Bootstrap CSS" />
           <Skillcard src="php.png" text="PHP" />
           <Skillcard src="expressjs.jpg" text="Express JS" />
+          <Skillcard src="springboot.png" text="SpringBoot" />
+          <Skillcard src="java.svg" text="Java" />
         </div>
       </motion.div>
     </div>
