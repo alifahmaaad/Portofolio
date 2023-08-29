@@ -62,13 +62,12 @@ const Sendme = () => {
                   className="shadow-lg text-black focus:outline-none w-full min-h[3rem] resize-none h-[5rem] p-4 my-4"
                   placeholder="Message"
                 />
-                <motion.button
-                  whileHover={{ scale: 1.25 }}
+                <button
                   type="submit"
-                  className="font-bold border p-3 border-current rounded-full text-[#0b0ed4]"
+                  className="relative text-[#0b0ed4] font-bold rounded-full hover:pl-2 hover:pr-7 duration-700 p-2 md:p-3 border text-sm md:text-lg after:content-['\00bb'] after:absolute after:opacity-0 after:duration-200 hover:after:opacity-100 after:right-6 hover:after:right-2"
                 >
                   Send Message
-                </motion.button>
+                </button>
               </form>
             </div>
           </div>
