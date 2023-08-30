@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 const AboutMe = () => {
   return (
-    <div className="h-full min-h-[50svh]">
+    <div className="h-full min-h-[50svh-24px] flex pt-10" id="aboutme">
       <motion.section
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}

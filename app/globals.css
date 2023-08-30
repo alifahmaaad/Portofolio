@@ -42,3 +42,31 @@ button:focus {
   box-shadow: inset 7.5em 0 0 0 white;
   color: blue;
 }
+.nav a {
+  width: fit-content;
+}
+.nav a::after {
+  content: " ";
+  display: block;
+}
+.nav a:hover,
+.nav a:focus,
+.nav a.active {
+  font-weight: 700;
+  color: #0b0ed4;
+}
+.nav a:hover:after,
+.nav a:focus:after {
+  border-bottom: 3px solid #0b0ed4;
+  animation: l_to_r 1s;
+  transition: ease-in-out;
+}
+@keyframes l_to_r {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

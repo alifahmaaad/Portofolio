@@ -7,9 +7,12 @@ const Slide1 = () => {
     window.scrollTo(0, document.body.scrollHeight);
   };
   return (
-    <div className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% min-h-[50svh] h-full overflow-x-hidden">
+    <div
+      className="bg-gradient-to-b lg:bg-gradient-to-r from-white md:from-[#0b0ed4] from-50% to-white md:to-white to-50% min-h-[50svh] h-full overflow-x-hidden"
+      id="slide1"
+    >
       <div className="min-h-[50svh]  bg-gradient-to-b md:bg-gradient-to-r from-[#0b0ed4] from-50% to-white to-50%">
-        <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center py-4 min-h-[50svh] ">
+        <div className="flex flex-col md:flex-row justify-around px-4 lg:pr=[5rem] 2xl:px-[20rem] items-center pt-10 min-h-[50svh] ">
           <div>
             <article className="nama px-[5rem] contents ">
               <span className="flex py-4 text-white  font-black text-xl md:text-3xl lg:text-5xl">

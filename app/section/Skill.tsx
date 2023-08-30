@@ -2,7 +2,7 @@ import Skillcard from "./component/Skillcard";
 import { motion } from "framer-motion";
 const Skill = () => {
   return (
-    <div className="h-full pb-[10rem] min-h-[50svh]">
+    <div className="h-full pb-[10rem] min-h-[50svh] pt-20" id="skill">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -27,7 +27,7 @@ const Skill = () => {
           <Skillcard src="php.png" text="PHP" />
           <Skillcard src="expressjs.jpg" text="Express JS" />
           <Skillcard src="springboot.png" text="SpringBoot" />
-          <Skillcard src="java.svg" text="Java" />
+          <Skillcard src="java.webp" text="Java" />
         </div>
       </motion.div>
     </div>
