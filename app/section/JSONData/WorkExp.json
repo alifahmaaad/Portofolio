@@ -6,13 +6,5 @@
     "year": "2021",
     "companie": "PT.Javan Cipta Solusi",
     "text": "Assigned to a company project to build and develop the website. Developed an website using laravel PHP in backend with PostgreSQL and VueJS in frontend. Coordinate with other team members, do the tasks assigned by the project manager and make sure the product meets the requirements and quality standards."
-  },
-  {
-    "imgurl": "/logosekolahnia.png",
-    "id": 2,
-    "role": "Software Developer - Freelance",
-    "text": "A Desktop App using Tauri App, Material UI, ReactJS, React Redux, React Router, bcryptjs, tauri-plugin-sql, sqlite database, for manage financial data on Yayasan Nurul ilmi Aini.",
-    "companie": "Yayasan Nurul Ilmi Aini",
-    "year": "2023"
   }
 ]

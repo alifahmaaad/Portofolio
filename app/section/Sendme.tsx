@@ -24,7 +24,7 @@ const Sendme = () => {
   };
   const form = useRef<HTMLFormElement>(null);
   return (
-    <div className="h-full bg-[#0b0ed4]">
+    <div className="h-full bg-[#0b0ed4]" id="sendme">
       <div className="min-h-[100svh] bg-white flex flex-col justify-between">
         <div className="min-h-[85svh] flex items-center container mx-auto px-4 justify-center">
           <div className="w-full max-w-[35rem]">
