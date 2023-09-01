@@ -6,6 +6,7 @@ const Navcomp = () => {
   const [defaultLogo, setLogo] = useState("");
   const [defaulttext, setText] = useState("");
   const [isOpen, setisOpen] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
   const url = usePathname();
   const changeBackground = () => {
     if (typeof window !== "undefined") {
@@ -13,10 +14,12 @@ const Navcomp = () => {
         setNavbar("bg-white shadow-lg transition duration-700 ease-in-out ");
         setLogo("text-[#0b0ed4] ");
         setText("text-[#0b0ed4] ");
+        setIsScroll(true);
       } else {
         setNavbar("");
         setLogo("text-white ");
         setText("text-white md:text-[#0b0ed4] ");
+        setIsScroll(false);
       }
     }
   };
@@ -45,7 +48,7 @@ const Navcomp = () => {
             className={
               (isOpen
                 ? "rotate-45 bg-[#0b0ed4] "
-                : window.scrollY >= 66
+                : isScroll
                 ? "bg-[#0b0ed4] "
                 : "bg-white md:bg-[#0b0ed4] ") + "w-4 h-[2px]  duration-700"
             }
@@ -53,9 +56,7 @@ const Navcomp = () => {
           <span
             className={
               (isOpen ? "opacity-0 " : "opacity-100 ") +
-              (window.scrollY >= 66
-                ? "bg-[#0b0ed4] "
-                : "bg-white md:bg-[#0b0ed4] ") +
+              (isScroll ? "bg-[#0b0ed4] " : "bg-white md:bg-[#0b0ed4] ") +
               "w-4 h-[2px]  duration-700"
             }
           />
@@ -63,7 +64,7 @@ const Navcomp = () => {
             className={
               (isOpen
                 ? "-rotate-45 absolute bg-[#0b0ed4] "
-                : window.scrollY >= 66
+                : isScroll
                 ? "bg-[#0b0ed4] "
                 : "bg-white md:bg-[#0b0ed4] ") + "w-4 h-[2px]"
             }
