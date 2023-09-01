@@ -1,10 +1,11 @@
-import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import NavbarMobile from "./NavbarMobile";
 const Navcomp = () => {
   const [navbar, setNavbar] = useState("");
   const [defaultLogo, setLogo] = useState("");
   const [defaulttext, setText] = useState("");
+  const [isOpen, setisOpen] = useState(false);
   const url = usePathname();
   const changeBackground = () => {
     if (typeof window !== "undefined") {
@@ -32,7 +33,42 @@ const Navcomp = () => {
         >
           A
         </a>
-        {/* <div className="font-bold flex lg:hidden">X</div> */}
+        <NavbarMobile open={isOpen} />
+        <div
+          className={
+            (isOpen ? "translate-y-2 " : "") +
+            "font-bold flex lg:hidden absolute z-50 right-0 top-0 p-5 flex-col gap-1 group duration-700"
+          }
+          onClick={() => setisOpen(!isOpen)}
+        >
+          <span
+            className={
+              (isOpen
+                ? "rotate-45 bg-[#0b0ed4] "
+                : window.scrollY >= 66
+                ? "bg-[#0b0ed4] "
+                : "bg-white md:bg-[#0b0ed4] ") + "w-4 h-[2px]  duration-700"
+            }
+          />
+          <span
+            className={
+              (isOpen ? "opacity-0 " : "opacity-100 ") +
+              (window.scrollY >= 66
+                ? "bg-[#0b0ed4] "
+                : "bg-white md:bg-[#0b0ed4] ") +
+              "w-4 h-[2px]  duration-700"
+            }
+          />
+          <span
+            className={
+              (isOpen
+                ? "-rotate-45 absolute bg-[#0b0ed4] "
+                : window.scrollY >= 66
+                ? "bg-[#0b0ed4] "
+                : "bg-white md:bg-[#0b0ed4] ") + "w-4 h-[2px]"
+            }
+          />
+        </div>
         <div
           className={
             "hidden lg:flex justify-between gap-4 font-semibold text-sm lg:text-base px-0 lg:px-[2rem] nav"
