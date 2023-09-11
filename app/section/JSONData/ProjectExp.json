@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "text": "A Website to reserve or booking restaurant and a user consists 1 of 4 different roles, the 3 main roles are restaurant admin, customer and app admin. and 1 more role super admin, backend with java springboot and frontend with React js",
+    "text": "A Website to reservation or booking restaurant and a user consists 1 of 4 different roles, the 3 main roles are restaurant admin, customer and app admin. and 1 more role super admin, backend with java springboot and frontend with React js",
     "imgurl": "/restoreserve.png",
-    "title": "RestoReserve Website (On development)",
+    "title": "RestoReservation Website ",
     "link": "https://restoreseve.vercel.app/"
   },
   {

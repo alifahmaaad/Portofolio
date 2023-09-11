@@ -7,6 +7,7 @@ const Navcomp = () => {
   const [defaulttext, setText] = useState("");
   const [isOpen, setisOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
+  const [active, setActive] = useState("");
   const url = usePathname();
   const changeBackground = () => {
     if (typeof window !== "undefined") {
@@ -22,6 +23,9 @@ const Navcomp = () => {
         setIsScroll(false);
       }
     }
+  };
+  const handleActiveNavbar = (id: string) => {
+    setActive(id);
   };
   useEffect(() => {
     changeBackground();
@@ -77,42 +81,72 @@ const Navcomp = () => {
         >
           <a
             href="#aboutme"
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={
+              defaulttext +
+              (active == "#aboutme" ? "active " : "") +
+              "rounded-md bg-white px-2 py-1 "
+            }
+            onClick={() => handleActiveNavbar("#aboutme")}
           >
             AboutMe
           </a>
           <a
             href="#skill"
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={
+              defaulttext +
+              (active == "#skill" ? "active " : "") +
+              "rounded-md bg-white px-2 py-1 "
+            }
+            onClick={() => handleActiveNavbar("#skill")}
           >
             Skill
           </a>
           <a
             href="#project"
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={
+              defaulttext +
+              (active == "#project" ? "active " : "") +
+              "rounded-md bg-white px-2 py-1 "
+            }
+            onClick={() => handleActiveNavbar("#project")}
           >
             Project
           </a>
           <a
             href="#work"
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={
+              defaulttext +
+              (active == "#work" ? "active " : "") +
+              "rounded-md bg-white px-2 py-1 "
+            }
+            onClick={() => handleActiveNavbar("#work")}
           >
             Experience
           </a>
           <a
             href="#certificate"
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={
+              defaulttext +
+              (active == "#certificate" ? "active " : "") +
+              "rounded-md bg-white px-2 py-1 "
+            }
+            onClick={() => handleActiveNavbar("#certificate")}
           >
             Certificate
           </a>
           <a
             href="#sendme"
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={
+              defaulttext +
+              (active == "#sendme" ? "active " : "") +
+              "rounded-md bg-white px-2 py-1 "
+            }
+            onClick={() => handleActiveNavbar("#sendme")}
           >
             SendMe
           </a>
           <a
-            className={defaulttext + "rounded-full bg-white px-2 py-1 border"}
+            className={defaulttext + "rounded-md bg-white px-2 py-1 "}
             href="https://alifahmaaad.github.io/Portofolio/Resume-Ahmad Alif Sofian.pdf"
             target="_blank"
           >
