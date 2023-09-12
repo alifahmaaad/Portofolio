@@ -1,14 +1,12 @@
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import NavbarMobile from "./NavbarMobile";
 const Navcomp = () => {
   const [navbar, setNavbar] = useState("");
-  const [defaultLogo, setLogo] = useState("");
+  const [defaultLogo, setLogo] = useState("text-[#0b0ed4]");
   const [defaulttext, setText] = useState("");
   const [isOpen, setisOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const [active, setActive] = useState("");
-  const url = usePathname();
   const changeBackground = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY >= 66) {
@@ -40,7 +38,11 @@ const Navcomp = () => {
         >
           A
         </a>
-        <NavbarMobile open={isOpen} />
+        <NavbarMobile
+          open={isOpen}
+          func={handleActiveNavbar}
+          isActive={active}
+        />
         <div
           className={
             (isOpen ? "translate-y-2 " : "") +
@@ -54,13 +56,13 @@ const Navcomp = () => {
                 ? "rotate-45 bg-[#0b0ed4] "
                 : isScroll
                 ? "bg-[#0b0ed4] "
-                : "bg-white md:bg-[#0b0ed4] ") + "w-4 h-[2px]  duration-700"
+                : "bg-white ") + "w-4 h-[2px]  duration-700"
             }
           />
           <span
             className={
               (isOpen ? "opacity-0 " : "opacity-100 ") +
-              (isScroll ? "bg-[#0b0ed4] " : "bg-white md:bg-[#0b0ed4] ") +
+              (isScroll ? "bg-[#0b0ed4] " : "bg-white ") +
               "w-4 h-[2px]  duration-700"
             }
           />
@@ -70,7 +72,7 @@ const Navcomp = () => {
                 ? "-rotate-45 absolute bg-[#0b0ed4] "
                 : isScroll
                 ? "bg-[#0b0ed4] "
-                : "bg-white md:bg-[#0b0ed4] ") + "w-4 h-[2px]"
+                : "bg-white ") + "w-4 h-[2px]"
             }
           />
         </div>
