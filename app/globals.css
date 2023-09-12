@@ -48,6 +48,7 @@ button:focus {
 .nav a::after {
   content: " ";
   display: block;
+  border-bottom: 3px solid transparent;
 }
 .nav a:hover,
 .nav a:focus,
