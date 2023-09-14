@@ -51,8 +51,8 @@ const Slide1 = () => {
                   duration: 0.7,
                 },
               }}
-              className="w-[13rem] h-[13rem] lg:w-[19rem] lg:h-[19rem] rounded-full border-4 border-black border-opacity-40 shadow-2xl my-10 lg:my-0"
-              src="https://alifahmaaad.github.io/Portofolio/profile-pic.png"
+              className="w-[13rem] h-[13rem] lg:w-[19rem] lg:h-[19rem] rounded-full border-4 border-black border-opacity-40 shadow-2xl my-10 lg:my-0 object-cover object-top"
+              src="https://alifahmaaad.github.io/Portofolio/profile-pic.jpg"
               alt="profile picture"
             />
           </div>
