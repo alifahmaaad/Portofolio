@@ -6,7 +6,7 @@ import Navcomp from "../section/component/Navcomp";
 // import NavCompfor from "../section/component/NavcompFornotSwiper";
 const AllProject = () => {
   return (
-    <div className="h-full bg-white dark:bg-gray-800">
+    <div className="h-full min-h-screen bg-white dark:bg-gray-800">
       <div>
         <Navcomp />
         <section className="flex items-center h-full px-0 py-10 md:px-[2rem]   2xl:px-[25rem]">

@@ -31,15 +31,32 @@ const Navcomp = () => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
   });
+  const handleDarkMode = () => {
+    if (document.documentElement.className == "dark") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  };
   return (
     <nav className="fixed w-full z-20">
       <div className={navbar + "flex justify-between py-4  px-4 "}>
-        <a
-          className={defaultLogo + "  font-bold cherry text-md lg:text-2xl"}
-          href="https://alifahmaaad.github.io/Portofolio/"
-        >
-          A
-        </a>
+        <div className="flex gap-2">
+          <a
+            className={defaultLogo + "  font-bold cherry text-md lg:text-2xl"}
+            href="https://alifahmaaad.github.io/Portofolio/"
+          >
+            A
+          </a>
+          <button
+            className="text-white bg-black"
+            onClick={() => {
+              handleDarkMode();
+            }}
+          >
+            Toggle
+          </button>
+        </div>
         <NavbarMobile
           open={isOpen}
           func={handleActiveNavbar}
@@ -86,7 +103,7 @@ const Navcomp = () => {
           }
         >
           <a
-            href="#aboutme"
+            href="/#aboutme"
             className={
               defaulttext +
               (active == "#aboutme" ? "active " : "") +
@@ -97,7 +114,7 @@ const Navcomp = () => {
             AboutMe
           </a>
           <a
-            href="#skill"
+            href="/#skill"
             className={
               defaulttext +
               (active == "#skill" ? "active " : "") +
@@ -108,7 +125,7 @@ const Navcomp = () => {
             Skill
           </a>
           <a
-            href="#project"
+            href="/#project"
             className={
               defaulttext +
               (active == "#project" ? "active " : "") +
@@ -119,7 +136,7 @@ const Navcomp = () => {
             Project
           </a>
           <a
-            href="#work"
+            href="/#work"
             className={
               defaulttext +
               (active == "#work" ? "active " : "") +
@@ -130,7 +147,7 @@ const Navcomp = () => {
             Experience
           </a>
           <a
-            href="#certificate"
+            href="/#certificate"
             className={
               defaulttext +
               (active == "#certificate" ? "active " : "") +
@@ -141,7 +158,7 @@ const Navcomp = () => {
             Certificate
           </a>
           <a
-            href="#sendme"
+            href="/#sendme"
             className={
               defaulttext +
               (active == "#sendme" ? "active " : "") +

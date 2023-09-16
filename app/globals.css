@@ -4,6 +4,8 @@
 html,
 body {
   scroll-behavior: smooth !important;
+  min-height: 100vh;
+  margin: 0;
 }
 .typewriter h2 {
   overflow: hidden;
@@ -36,6 +38,11 @@ body {
   50% {
     border-color: white;
   }
+}
+.buttonComp button:hover,
+.buttonComp button:focus {
+  box-shadow: inset 7.5em 0 0 0 white;
+  color: blue;
 }
 button:hover,
 button:focus {

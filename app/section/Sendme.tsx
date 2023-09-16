@@ -74,7 +74,7 @@ const Sendme = () => {
                 />
                 <button
                   type="submit"
-                  className="relative text-white font-bold rounded-full hover:pl-2 hover:pr-7 duration-700 px-2 md:px-3 py-1 border text-sm md:text-lg after:content-['\00bb'] after:absolute after:opacity-0 after:duration-200 hover:after:opacity-100 after:right-6 hover:after:right-2 hover:bg-white dark:bg-[#34356d] bg-[#0b0ed4] dark:hover:text-[#34356d]"
+                  className="relative text-white font-bold rounded-full hover:pl-2 hover:pr-7 duration-700 px-2 md:px-3 py-1 border text-sm md:text-lg after:content-['\00bb'] after:absolute after:opacity-0 after:duration-200 hover:after:opacity-100 after:right-6 hover:after:right-2 hover:bg-white dark:bg-[#34356d] bg-[#0b0ed4] dark:hover:bg-white dark:hover:text-[#34356d]"
                 >
                   Send Message
                 </button>
