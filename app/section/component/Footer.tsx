@@ -1,6 +1,6 @@
 const FooterComp = () => {
   return (
-    <footer className="h-[15svh] bg-[#0b0ed4] flex flex-col justify-center items-center">
+    <footer className="h-[15svh] dark:bg-[#34356d] bg-[#0b0ed4] flex flex-col justify-center items-center">
       <div className="text-white justify-center flex flex-wrap gap-3 px-4 ">
         <span className="px-2 hover:scale-105 duration-200">
           <a

@@ -11,7 +11,7 @@ const Project = () => {
   }, []);
   const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
-    <div className="h-full bg-[#0b0ed4] py-5" id="project">
+    <div className="h-full dark:bg-[#34356d] bg-[#0b0ed4] py-5" id="project">
       <div className="min-h-[100svh] py-10 ">
         <section className="flex items-center justify-center h-full min-h-[100svh] container mx-auto px-4 max-w-[60rem]">
           <div className="w-full">
