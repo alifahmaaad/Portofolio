@@ -100,7 +100,10 @@ const Navcomp = () => {
           }
         >
           <button
-            className="text-white buttonDarkMode hover:scale-105 flex gap-2 items-center hover:cursor-pointer"
+            className={
+              defaulttext +
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 buttonDarkMode hover:scale-105 flex gap-2 items-center hover:cursor-pointer"
+            }
             onClick={() => {
               handleDarkMode();
             }}
@@ -112,7 +115,7 @@ const Navcomp = () => {
             )}
             <label
               htmlFor="button"
-              className="font-mono text-white hover:cursor-pointer"
+              className={defaulttext + " font-mono hover:cursor-pointer"}
             >
               {isDark ? "Set Light" : "Set Dark"}
             </label>
