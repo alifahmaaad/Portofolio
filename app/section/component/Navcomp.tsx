@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import NavbarMobile from "./NavbarMobile";
 const Navcomp = () => {
   const [navbar, setNavbar] = useState("");
-  const [defaultLogo, setLogo] = useState("text-[#0b0ed4]");
+  const [defaultLogo, setLogo] = useState("text-[#0b0ed4] dark:text-white");
   const [defaulttext, setText] = useState("");
   const [isOpen, setisOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
@@ -10,14 +10,16 @@ const Navcomp = () => {
   const changeBackground = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY >= 66) {
-        setNavbar("bg-white shadow-lg transition duration-700 ease-in-out ");
-        setLogo("text-[#0b0ed4] ");
-        setText("text-[#0b0ed4] ");
+        setNavbar(
+          "bg-white dark:bg-gray-800 shadow-lg transition duration-700 ease-in-out "
+        );
+        setLogo("text-[#0b0ed4] dark:text-white ");
+        setText("text-[#0b0ed4] dark:text-white ");
         setIsScroll(true);
       } else {
         setNavbar("");
         setLogo("text-white ");
-        setText("text-white md:text-[#0b0ed4] ");
+        setText("text-white md:text-[#0b0ed4] dark:text-white ");
         setIsScroll(false);
       }
     }
@@ -53,26 +55,28 @@ const Navcomp = () => {
           <span
             className={
               (isOpen
-                ? "rotate-45 bg-[#0b0ed4] "
+                ? "rotate-45 dark:bg-[#34356d] bg-[#0b0ed4] "
                 : isScroll
-                ? "bg-[#0b0ed4] "
-                : "bg-white ") + "w-4 h-[2px]  duration-700"
+                ? "dark:bg-[#34356d] bg-[#0b0ed4] "
+                : "bg-white dark:bg-gray-800 ") + "w-4 h-[2px]  duration-700"
             }
           />
           <span
             className={
               (isOpen ? "opacity-0 " : "opacity-100 ") +
-              (isScroll ? "bg-[#0b0ed4] " : "bg-white ") +
+              (isScroll
+                ? "dark:bg-[#34356d] bg-[#0b0ed4] "
+                : "bg-white dark:bg-gray-800 ") +
               "w-4 h-[2px]  duration-700"
             }
           />
           <span
             className={
               (isOpen
-                ? "-rotate-45 absolute bg-[#0b0ed4] "
+                ? "-rotate-45 absolute dark:bg-[#34356d] bg-[#0b0ed4] "
                 : isScroll
-                ? "bg-[#0b0ed4] "
-                : "bg-white ") + "w-4 h-[2px]"
+                ? "dark:bg-[#34356d] bg-[#0b0ed4] "
+                : "bg-white dark:bg-gray-800 ") + "w-4 h-[2px]"
             }
           />
         </div>
@@ -86,7 +90,7 @@ const Navcomp = () => {
             className={
               defaulttext +
               (active == "#aboutme" ? "active " : "") +
-              "rounded-md bg-white px-2 py-1 "
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
             onClick={() => handleActiveNavbar("#aboutme")}
           >
@@ -97,7 +101,7 @@ const Navcomp = () => {
             className={
               defaulttext +
               (active == "#skill" ? "active " : "") +
-              "rounded-md bg-white px-2 py-1 "
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
             onClick={() => handleActiveNavbar("#skill")}
           >
@@ -108,7 +112,7 @@ const Navcomp = () => {
             className={
               defaulttext +
               (active == "#project" ? "active " : "") +
-              "rounded-md bg-white px-2 py-1 "
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
             onClick={() => handleActiveNavbar("#project")}
           >
@@ -119,7 +123,7 @@ const Navcomp = () => {
             className={
               defaulttext +
               (active == "#work" ? "active " : "") +
-              "rounded-md bg-white px-2 py-1 "
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
             onClick={() => handleActiveNavbar("#work")}
           >
@@ -130,7 +134,7 @@ const Navcomp = () => {
             className={
               defaulttext +
               (active == "#certificate" ? "active " : "") +
-              "rounded-md bg-white px-2 py-1 "
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
             onClick={() => handleActiveNavbar("#certificate")}
           >
@@ -141,14 +145,16 @@ const Navcomp = () => {
             className={
               defaulttext +
               (active == "#sendme" ? "active " : "") +
-              "rounded-md bg-white px-2 py-1 "
+              "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
             onClick={() => handleActiveNavbar("#sendme")}
           >
             SendMe
           </a>
           <a
-            className={defaulttext + "rounded-md bg-white px-2 py-1 "}
+            className={
+              defaulttext + "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
+            }
             href="https://alifahmaaad.github.io/Portofolio/Resume-Ahmad Alif Sofian.pdf"
             target="_blank"
           >

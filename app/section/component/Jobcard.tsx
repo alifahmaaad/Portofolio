@@ -13,11 +13,13 @@ const Jobcard = (props: {
         className="h-[8rem] w-[8rem] sm:w-[10rem] sm:h-[10rem] zoom aspect-square object-contain"
       />
       <div className="flex flex-col">
-        <h1 className="font-bold text-md sm:text-xl">{props.role}</h1>
-        <h2 className="font-bold text-sm sm:text-md">
+        <h1 className="font-bold text-md sm:text-xl dark:text-gray-100">
+          {props.role}
+        </h1>
+        <h2 className="font-bold text-sm sm:text-md dark:text-gray-100">
           {props.companie} - {props.year}
         </h2>
-        <p className=" text-gray-500 py-2 overflow-hidden text-sm sm:text-md">
+        <p className=" text-gray-500 dark:text-gray-200 py-2 overflow-hidden text-sm sm:text-md">
           {props.text}
         </p>
       </div>

@@ -11,7 +11,7 @@ export default function RootLayout({
       <head>
         <title>Portofolio Ahmad Alif Sofian</title>
       </head>
-      <body>{children}</body>
+      <body className="dark">{children}</body>
     </html>
   );
 }

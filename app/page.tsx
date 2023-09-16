@@ -11,7 +11,7 @@ import Navcomp from "./section/component/Navcomp";
 import PaginationNav from "./section/component/PaginationNav";
 export default function Home() {
   return (
-    <main className="bg-white overflow-x-hidden">
+    <main className="bg-white dark:bg-gray-800 overflow-x-hidden">
       <PaginationNav />
       <Navcomp />
       <Slide1 />

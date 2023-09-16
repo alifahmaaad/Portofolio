@@ -10,7 +10,7 @@ const Skill = () => {
         className=" flex flex-col container mx-auto px-4 justify-center items-center min-h-[50svh] max-w-[60rem]"
       >
         <div className="flex">
-          <span className="text-[#0b0ed4] font-bold text-xl md:text-3xl lg:text-5xl">
+          <span className="text-[#0b0ed4] dark:text-white font-bold text-xl md:text-3xl lg:text-5xl">
             Skills.
           </span>
         </div>

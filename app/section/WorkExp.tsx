@@ -11,7 +11,7 @@ const WorkExp = () => {
   return (
     <div className="h-full" id="work">
       <div className="min-h-[40rem] flex flex-col container mx-auto px-4 justify-center items-center max-w-[60rem] py-10">
-        <span className="text-[#0b0ed4] font-bold text-xl md:text-3xl lg:text-5xl py-[2rem]">
+        <span className="text-[#0b0ed4] dark:text-white font-bold text-xl md:text-3xl lg:text-5xl py-[2rem]">
           My Work Experience.
         </span>
         <div>

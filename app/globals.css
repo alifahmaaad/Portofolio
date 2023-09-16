@@ -55,10 +55,22 @@ button:focus {
 .nav a.active {
   color: #0b0ed4;
 }
+.dark .nav a:hover,
+.dark .nav a:focus,
+.dark .nav a.active {
+  color: #6466b4;
+}
 .nav a:hover:after,
 .nav a:focus:after,
 .nav a.active:after {
   border-bottom: 3px solid #0b0ed4;
+  animation: l_to_r 1s;
+  transition: ease-in-out;
+}
+.dark .nav a:hover:after,
+.dark .nav a:focus:after,
+.dark .nav a.active:after {
+  border-bottom: 3px solid #6466b4;
   animation: l_to_r 1s;
   transition: ease-in-out;
 }

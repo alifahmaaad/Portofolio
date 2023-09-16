@@ -10,7 +10,7 @@ const Certificate = () => {
   }, []);
   const [cardmaxindex, SetCardmaxindex] = useState<number>();
   return (
-    <div className="h-full bg-[#0b0ed4]" id="certificate">
+    <div className="h-full dark:bg-[#34356d] bg-[#0b0ed4]" id="certificate">
       <div className="min-h-[100svh]">
         <section className="flex items-center w-full h-full container mx-auto px-4 py-10 max-w-[60rem]  ">
           <div className="w-full">

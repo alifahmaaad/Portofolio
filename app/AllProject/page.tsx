@@ -6,12 +6,12 @@ import Navcomp from "../section/component/Navcomp";
 // import NavCompfor from "../section/component/NavcompFornotSwiper";
 const AllProject = () => {
   return (
-    <div className="h-full bg-white">
+    <div className="h-full bg-white dark:bg-gray-800">
       <div>
         <Navcomp />
         <section className="flex items-center h-full px-0 py-10 md:px-[2rem]   2xl:px-[25rem]">
           <div className="w-full">
-            <header className="font-bold text-[#0b0ed4] text-2xl md:text-5xl lg:text-7xl py-3">
+            <header className="font-bold text-[#0b0ed4] dark:text-white text-2xl md:text-5xl lg:text-7xl py-3">
               <h1 className="text-ellipsis">What I've been working on.</h1>
               <h3 className="text-xl font-normal pt-1 px-2">My Project </h3>
             </header>

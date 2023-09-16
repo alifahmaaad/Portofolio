@@ -8,7 +8,7 @@ const Skillcard = (props: { src: string; text: string }) => {
           src={"https://alifahmaaad.github.io/Portofolio/" + props.src}
         />
       </div>
-      <div className="items-center flex justify-center text-sm lg:text-lg font-semibold ">
+      <div className="items-center flex justify-center text-sm lg:text-lg font-semibold dark:text-gray-300">
         {props.text}
       </div>
     </div>
