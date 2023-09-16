@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import NavbarMobile from "./NavbarMobile";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 const Navcomp = () => {
   const [navbar, setNavbar] = useState("");
   const [defaultLogo, setLogo] = useState("text-[#0b0ed4] dark:text-white");
@@ -7,6 +9,7 @@ const Navcomp = () => {
   const [isOpen, setisOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const [active, setActive] = useState("");
+  const [isDark, setIsDark] = useState(false);
   const changeBackground = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY >= 66) {
@@ -34,13 +37,15 @@ const Navcomp = () => {
   const handleDarkMode = () => {
     if (document.documentElement.className == "dark") {
       document.documentElement.classList.remove("dark");
+      setIsDark(false);
     } else {
       document.documentElement.classList.add("dark");
+      setIsDark(true);
     }
   };
   return (
     <nav className="fixed w-full z-20">
-      <div className={navbar + "flex justify-between py-4  px-4 "}>
+      <div className={navbar + "flex justify-between py-4  px-4"}>
         <div className="flex gap-2">
           <a
             className={defaultLogo + "  font-bold cherry text-md lg:text-2xl"}
@@ -48,14 +53,6 @@ const Navcomp = () => {
           >
             A
           </a>
-          <button
-            className="text-white bg-black"
-            onClick={() => {
-              handleDarkMode();
-            }}
-          >
-            Toggle
-          </button>
         </div>
         <NavbarMobile
           open={isOpen}
@@ -102,6 +99,24 @@ const Navcomp = () => {
             "hidden lg:flex justify-between gap-4 font-semibold text-sm lg:text-base px-0 lg:px-[2rem] nav"
           }
         >
+          <button
+            className="text-white buttonDarkMode hover:scale-105 flex gap-2 items-center hover:cursor-pointer"
+            onClick={() => {
+              handleDarkMode();
+            }}
+          >
+            {isDark ? (
+              <FontAwesomeIcon icon={faSun} />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} />
+            )}
+            <label
+              htmlFor="button"
+              className="font-mono text-white hover:cursor-pointer"
+            >
+              {isDark ? "Set Light" : "Set Dark"}
+            </label>
+          </button>
           <a
             href="/#aboutme"
             className={

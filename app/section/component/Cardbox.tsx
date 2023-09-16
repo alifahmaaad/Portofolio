@@ -24,11 +24,6 @@ const Cardbox = (props: {
         <div className="p-2 px-2 md:px-4">
           <h1 className="font-bold">{props.title}</h1>
           <p className="overflow-hidden">{props.text}</p>
-          {/* {props.link && (
-            <a href={props.link} className="text-blue-500 hover:font-bold">
-              {props.linktext}
-            </a>
-          )} */}
         </div>
       </a>
     </div>

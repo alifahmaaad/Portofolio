@@ -32,7 +32,7 @@ const Sendme = () => {
             <header className="font-bold text-[#0b0ed4] dark:text-white text-xl md:text-3xl lg:text-5xl py-5   ">
               <h1 className="text-ellipsis">Lets Talk.</h1>
             </header>
-            <div className="block">
+            <div className="block sendme">
               <form ref={form} onSubmit={SendMessage}>
                 <label
                   htmlFor="name"
