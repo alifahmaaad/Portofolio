@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import NavbarMobile from "./NavbarMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +30,7 @@ const Navcomp = () => {
   const handleActiveNavbar = (id: string) => {
     setActive(id);
   };
-  useEffect(() => {
+  useLayoutEffect(() => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
   });
@@ -109,19 +109,22 @@ const Navcomp = () => {
             }}
           >
             {isDark ? (
-              <FontAwesomeIcon icon={faSun} />
+              <FontAwesomeIcon icon={faSun} className="max-h-[1rem]" />
             ) : (
-              <FontAwesomeIcon icon={faMoon} />
+              <FontAwesomeIcon icon={faMoon} className="max-h-[1rem]" />
             )}
             <label
               htmlFor="button"
-              className={defaulttext + " font-mono hover:cursor-pointer"}
+              className={
+                defaulttext +
+                " font-mono hover:cursor-pointer w-fit line-clamp-1"
+              }
             >
               {isDark ? "Set Light" : "Set Dark"}
             </label>
           </button>
           <a
-            href="/#aboutme"
+            href="/Portofolio/#aboutme"
             className={
               defaulttext +
               (active == "#aboutme" ? "active " : "") +
@@ -132,7 +135,7 @@ const Navcomp = () => {
             AboutMe
           </a>
           <a
-            href="/#skill"
+            href="/Portofolio/#skill"
             className={
               defaulttext +
               (active == "#skill" ? "active " : "") +
@@ -143,7 +146,7 @@ const Navcomp = () => {
             Skill
           </a>
           <a
-            href="/#project"
+            href="/Portofolio/#project"
             className={
               defaulttext +
               (active == "#project" ? "active " : "") +
@@ -154,7 +157,7 @@ const Navcomp = () => {
             Project
           </a>
           <a
-            href="/#work"
+            href="/Portofolio/#work"
             className={
               defaulttext +
               (active == "#work" ? "active " : "") +
@@ -165,7 +168,7 @@ const Navcomp = () => {
             Experience
           </a>
           <a
-            href="/#certificate"
+            href="/Portofolio/#certificate"
             className={
               defaulttext +
               (active == "#certificate" ? "active " : "") +
@@ -176,7 +179,7 @@ const Navcomp = () => {
             Certificate
           </a>
           <a
-            href="/#sendme"
+            href="/Portofolio/#sendme"
             className={
               defaulttext +
               (active == "#sendme" ? "active " : "") +
