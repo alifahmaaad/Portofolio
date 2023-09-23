@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import NavbarMobile from "./NavbarMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 const Navcomp = () => {
   const [navbar, setNavbar] = useState("");
   const [defaultLogo, setLogo] = useState("text-[#0b0ed4] dark:text-white");
@@ -30,7 +31,7 @@ const Navcomp = () => {
   const handleActiveNavbar = (id: string) => {
     setActive(id);
   };
-  useEffect(() => {
+  useLayoutEffect(() => {
     changeBackground();
     window.addEventListener("scroll", changeBackground);
   });
@@ -109,19 +110,22 @@ const Navcomp = () => {
             }}
           >
             {isDark ? (
-              <FontAwesomeIcon icon={faSun} />
+              <FontAwesomeIcon icon={faSun} className="max-h-[1rem]" />
             ) : (
-              <FontAwesomeIcon icon={faMoon} />
+              <FontAwesomeIcon icon={faMoon} className="max-h-[1rem]" />
             )}
             <label
               htmlFor="button"
-              className={defaulttext + " font-mono hover:cursor-pointer"}
+              className={
+                defaulttext +
+                " font-mono hover:cursor-pointer w-fit line-clamp-1"
+              }
             >
               {isDark ? "Set Light" : "Set Dark"}
             </label>
           </button>
           <a
-            href="/#aboutme"
+            href="#aboutme"
             className={
               defaulttext +
               (active == "#aboutme" ? "active " : "") +
@@ -132,7 +136,7 @@ const Navcomp = () => {
             AboutMe
           </a>
           <a
-            href="/#skill"
+            href="#skill"
             className={
               defaulttext +
               (active == "#skill" ? "active " : "") +
@@ -143,7 +147,7 @@ const Navcomp = () => {
             Skill
           </a>
           <a
-            href="/#project"
+            href="#project"
             className={
               defaulttext +
               (active == "#project" ? "active " : "") +
@@ -153,8 +157,8 @@ const Navcomp = () => {
           >
             Project
           </a>
-          <a
-            href="/#work"
+          <Link
+            href="#work"
             className={
               defaulttext +
               (active == "#work" ? "active " : "") +
@@ -163,9 +167,9 @@ const Navcomp = () => {
             onClick={() => handleActiveNavbar("#work")}
           >
             Experience
-          </a>
+          </Link>
           <a
-            href="/#certificate"
+            href="#certificate"
             className={
               defaulttext +
               (active == "#certificate" ? "active " : "") +
@@ -176,7 +180,7 @@ const Navcomp = () => {
             Certificate
           </a>
           <a
-            href="/#sendme"
+            href="#sendme"
             className={
               defaulttext +
               (active == "#sendme" ? "active " : "") +
