@@ -45,7 +45,7 @@ const NavbarMobile = (props: {
         </label>
       </button>
       <a
-        href="Portofolio/#aboutme"
+        href="#aboutme"
         className={
           props.isActive == "#aboutme" ? "active " : "dark:text-white "
         }
@@ -54,14 +54,14 @@ const NavbarMobile = (props: {
         AboutMe
       </a>
       <a
-        href="Portofolio/#skill"
+        href="#skill"
         className={props.isActive == "#skill" ? "active " : "dark:text-white "}
         onClick={() => props.func("#skill")}
       >
         Skill
       </a>
       <a
-        href="Portofolio/#project"
+        href="#project"
         className={
           props.isActive == "#project" ? "active " : "dark:text-white "
         }
@@ -70,14 +70,14 @@ const NavbarMobile = (props: {
         Project
       </a>
       <a
-        href="Portofolio/#work"
+        href="#work"
         className={props.isActive == "#work" ? "active " : "dark:text-white "}
         onClick={() => props.func("#work")}
       >
         Experience
       </a>
       <a
-        href="Portofolio/#certificate"
+        href="#certificate"
         className={
           props.isActive == "#certificate" ? "active " : "dark:text-white "
         }
@@ -86,7 +86,7 @@ const NavbarMobile = (props: {
         Certificate
       </a>
       <a
-        href="Portofolio/#sendme"
+        href="#sendme"
         className={props.isActive == "#sendme" ? "active " : "dark:text-white "}
         onClick={() => props.func("#sendme")}
       >

@@ -2,6 +2,7 @@ import { useLayoutEffect, useState } from "react";
 import NavbarMobile from "./NavbarMobile";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 const Navcomp = () => {
   const [navbar, setNavbar] = useState("");
   const [defaultLogo, setLogo] = useState("text-[#0b0ed4] dark:text-white");
@@ -124,7 +125,7 @@ const Navcomp = () => {
             </label>
           </button>
           <a
-            href="/Portofolio/#aboutme"
+            href="#aboutme"
             className={
               defaulttext +
               (active == "#aboutme" ? "active " : "") +
@@ -135,7 +136,7 @@ const Navcomp = () => {
             AboutMe
           </a>
           <a
-            href="/Portofolio/#skill"
+            href="#skill"
             className={
               defaulttext +
               (active == "#skill" ? "active " : "") +
@@ -146,7 +147,7 @@ const Navcomp = () => {
             Skill
           </a>
           <a
-            href="/Portofolio/#project"
+            href="#project"
             className={
               defaulttext +
               (active == "#project" ? "active " : "") +
@@ -156,8 +157,8 @@ const Navcomp = () => {
           >
             Project
           </a>
-          <a
-            href="/Portofolio/#work"
+          <Link
+            href="#work"
             className={
               defaulttext +
               (active == "#work" ? "active " : "") +
@@ -166,9 +167,9 @@ const Navcomp = () => {
             onClick={() => handleActiveNavbar("#work")}
           >
             Experience
-          </a>
+          </Link>
           <a
-            href="/Portofolio/#certificate"
+            href="#certificate"
             className={
               defaulttext +
               (active == "#certificate" ? "active " : "") +
@@ -179,7 +180,7 @@ const Navcomp = () => {
             Certificate
           </a>
           <a
-            href="/Portofolio/#sendme"
+            href="#sendme"
             className={
               defaulttext +
               (active == "#sendme" ? "active " : "") +
