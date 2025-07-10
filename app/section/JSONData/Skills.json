@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Languages.",
+    "list": [
+      {
+        "src": "JavaScript.png",
+        "text": "JavaScript"
+      }
+    ]
+  },
+  {
+    "name": "Framework & Tools.",
+    "list": [
+      { "src": "expressjs.jpg", "text": "Express JS" },
+      { "src": "react.webp", "text": "React" },
+      { "src": "redux.png", "text": "Redux" },
+      { "src": "tailwind.png", "text": "Tailwind CSS" },
+      { "src": "mui.png", "text": "Material UI" },
+      { "src": "html.jpg", "text": "HTML" },
+      { "src": "css.png", "text": "CSS" }
+    ]
+  },
+  {
+    "name": "Testing.",
+    "list": [
+      {
+        "src": "jest.jpg",
+        "text": "Jest"
+      }
+    ]
+  },
+  {
+    "name": "Databases.",
+    "list": [
+      { "src": "mysql.png", "text": "MySQL" },
+      { "src": "postgresql.png", "text": "PostgreSQL" },
+      { "src": "sqlite.jpg", "text": "SQLite" }
+    ]
+  }
+]

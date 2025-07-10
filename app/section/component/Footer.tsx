@@ -69,7 +69,7 @@ const FooterComp = () => {
         </span>
       </div>
       <div className="text-white hover:cursor-default">
-        Created By - Ahmad Alif Sofian 2023
+        Created By - Ahmad Alif Sofian
       </div>
     </footer>
   );

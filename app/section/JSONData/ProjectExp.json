@@ -1,50 +1,23 @@
 [
   {
     "id": 1,
-    "text": "A Website to reservation or booking restaurant and a user consists 1 of 4 different roles, the 3 main roles are restaurant admin, customer and app admin. and 1 more role super admin, backend with java springboot and frontend with React js",
-    "imgurl": "/restoreserve.png",
-    "title": "RestoReservation Website ",
-    "link": "https://restoreservation.vercel.app/"
+    "text": "- Developed and integrated middleware services connecting internal and external APIs for the MyTelkomsel mobile application. \n - Collaborated with cross-functional teams to integrate APIs with internal and external system",
+    "imgurl": "mytelkomsel.png",
+    "title": "MyTelkomsel App",
+    "link": "https://play.google.com/store/apps/details?id=com.telkomsel.telkomselcm&hl=id"
   },
   {
     "id": 2,
-    "text": "A Website to display Food information from TheMealDb API. Consume the API from TheMealDB,Frontend developed Using Vite ReactJS, React Router and Tailwind CSS.",
-    "imgurl": "/mealapp.png",
-    "title": "TheMealApp Website",
-    "link": "https://themealapp.vercel.app/"
+    "text": "- Developed a locally-run web application for managing laundry transactions and services.\n - Integrated OpenStreetMap API for interactive location mapping of laundry outlets.\n - Implemented Stream.io for real-time chat functionality between customers and service providers.\n - sUtilized ReactJS for the Front end and Express (Node.js) for the Back end.",
+    "imgurl": "easywash.png",
+    "title": "EasyWash Website",
+    "link": "https://github.com/ahmadaliff/EasyWash-FinalProject"
   },
   {
     "id": 3,
-    "text": "Todolist website using expressJS NodeJs and React.",
-    "imgurl": "/porto.jpg",
-    "title": "ToDoList",
-    "link": "https://todolist.alifahmaaad.vercel.app/"
-  },
-  {
-    "id": 4,
-    "imgurl": "/logosekolahnia.png",
+    "imgurl": "logosekolahnia.png",
     "text": "Work on projects individually  Developed desktop App for manage financial data on Yayasan Nurul ilmi Aini.  This App speed up financial records and overcome input errors in the school.  Developed using Tauri App, tauri-plugin-sql, sqlite database for back-end side.  Developed using ReactJS, Material UI, React Redux, React Router for frontend side.",
     "title": "Financial Manage App Nurul Ilmi Aini",
     "link": "https://drive.google.com/file/d/1tU4mkbEEjwCE0D3fxmNe7--B6c-2eysO/view?usp=sharing"
-  },
-  {
-    "id": 5,
-    "text": "A Website with NextJS , Tailwind CSS, FramerMotion, and SwiperJS. its Single Page Application that show my personal portofolio and information about me.",
-    "imgurl": "/porto.jpg",
-    "title": "Personal Portofolio Website",
-    "link": "#"
-  },
-  {
-    "id": 6,
-    "text": "A mobile application with React Native as a Frontend and Laravel 8 as a Backend, used as place for merchants and consumer to show information of product, buy and sell cakes.  Role as a Team Leader, Backend and Frontend in developement.",
-    "imgurl": "/Naka.png",
-    "title": "Naka Marketplace",
-    "link": "/NakaMarketplace.apk"
-  },
-  {
-    "id": 7,
-    "text": "A Website with Laravel8 and MySQL to display healthy food content and information on the food menu that urdailyhealth sell. Role as Frontend Using Blade from laravel 8 and Bootstrap.",
-    "imgurl": "/urdailyhealth.png",
-    "title": "Urdailyhealth Website"
   }
 ]

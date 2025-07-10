@@ -17,13 +17,14 @@ const Cardbox = (props: {
 
         <div className="flex justify-center">
           <img
-            src={"https://alifahmaaad.github.io/Portofolio" + props.imgurl}
+            alt={props.text}
+            src={"https://alifahmaaad.github.io/Portofolio/" + props.imgurl}
             className="h-[8rem] w-[8rem] sm:w-[10rem] sm:h-[10rem] self-center my-2 lg:my-0 aspect-square object-contain"
           />
         </div>
         <div className="p-2 px-2 md:px-4">
           <h1 className="font-bold">{props.title}</h1>
-          <p className="overflow-hidden">{props.text}</p>
+          <p className="whitespace-pre-line overflow-hidden">{props.text}</p>
         </div>
       </a>
     </div>

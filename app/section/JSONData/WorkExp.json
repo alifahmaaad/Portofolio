@@ -1,10 +1,26 @@
 [
   {
-    "imgurl": "/Javan.jfif",
+    "imgurl": "phincon.jpeg",
     "id": 1,
-    "role": "Software Developer (PHP) - Intern",
-    "year": "2021",
-    "companie": "PT.Javan Cipta Solusi",
-    "text": "Assigned to a company project to build and develop the website. Developed an website using laravel PHP in backend with PostgreSQL and VueJS in frontend. Coordinate with other team members, do the tasks assigned by the project manager and make sure the product meets the requirements and quality standards."
+    "role": "Backend Developer",
+    "year": " Jan 2024 – Juli 2025",
+    "companie": "PT Phincon – Jakarta, Indonesia (On Site)",
+    "text": "- Develop and maintain web api middleware services for the MyTelkomsel app using Node.js and Express.js to bridge communication between mobile applications and core backend APIs.\n - Implement request validation, error handling, and consistent response formatting. Write unit tests with Jest to improve code reliability and support mobile team development./n - Troubleshoot and resolve production issues./n -Support backend configuration responses for SIT and UAT testing environments."
+  },
+  {
+    "imgurl": "phincon.jpeg",
+    "id": 2,
+    "role": "Fullstack Developer Trainee",
+    "year": "Oct 2023 – Dec 2023",
+    "companie": "PT Phincon – Jakarta, Indonesia (On Site)",
+    "text": "- Participated as a trainee in an intensive Fullstack Developer Program covering ReactJS, Material UI, CSS, Sass, Jest, React Redux, Redux Saga, Express.js, Node.js, Redis, MySql. \n - Worked on real boilerplate projects for handling frontend development tasks. \n - Collaborated with fellow trainees to build both backend and frontend components within a team environment. \n - Completed a final project by developing a locally-run Laundry Management Web App (EasyWash) integrating OpenStreetMap for location mapping and Stream.io for chat functionality."
+  },
+  {
+    "imgurl": "Javan.jfif",
+    "id": 3,
+    "role": "Software Developer Internship",
+    "year": "Jun 2021 – Aug 2021",
+    "companie": "PT.Javan Cipta Solusi - Yogyakarta, Indonesia (Remote)",
+    "text": "- Collaborated in a team and assisted in developing a website using Laravel (PHP) for the back end and VueJS for the front end.\n - Handled minor development tasks, implementing small features, and performing database operations using PostgreSQL."
   }
 ]

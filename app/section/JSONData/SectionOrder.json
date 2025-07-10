@@ -1,0 +1,79 @@
+[
+  {
+    "order": 0,
+    "CompName": "PaginationNav",
+    "name": "PaginationNav",
+    "isShowInNavbar": false
+  },
+  {
+    "order": 1,
+    "CompName": "Navcomp",
+    "name": "Navcomp",
+    "isShowInNavbar": false
+  },
+  {
+    "order": 2,
+    "CompName": "Slide1",
+    "name": "Slide1",
+    "isShowInNavbar": false
+  },
+  {
+    "order": 3,
+    "CompName": "AboutMe",
+    "name": "AboutMe",
+    "isShowInNavbar": true,
+    "id": "aboutme"
+  },
+  {
+    "order": 4,
+    "CompName": "WorkExp",
+    "name": "Experience",
+    "isShowInNavbar": true,
+    "id": "work"
+  },
+  {
+    "order": 5,
+    "CompName": "Skill",
+    "name": "Skill",
+    "isShowInNavbar": true,
+    "id": "skill"
+  },
+  {
+    "order": 6,
+    "CompName": "Project",
+    "name": "Project",
+    "isShowInNavbar": true,
+    "id": "project",
+    "props": {
+      "title": "Projects",
+      "link": "AllProject",
+      "jsonName": "ProjectExp"
+    }
+  },
+  {
+    "order": 7,
+    "CompName": "Project",
+    "name": "Portofolio",
+    "isShowInNavbar": true,
+    "id": "portofolio",
+    "props": {
+      "title": "Portofolio",
+      "link": "AllPortofolio",
+      "jsonName": "Portofolio"
+    }
+  },
+  {
+    "order": 8,
+    "CompName": "Certificate",
+    "name": "Certificate",
+    "isShowInNavbar": true,
+    "id": "certificate"
+  },
+  {
+    "order": 9,
+    "CompName": "Sendme",
+    "name": "SendMe",
+    "isShowInNavbar": true,
+    "id": "sendme"
+  }
+]

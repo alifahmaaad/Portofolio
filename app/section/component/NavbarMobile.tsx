@@ -1,22 +1,15 @@
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import sectionOrder from "../JSONData/SectionOrder.json";
 
 const NavbarMobile = (props: {
   open: boolean;
+  funcIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  funcHandleDarkMode: Function;
   func: Function;
   isActive: string;
+  isDark: boolean;
 }) => {
-  const [isDark, setIsDark] = useState(false);
-  const handleDarkMode = () => {
-    if (document.documentElement.className == "dark") {
-      document.documentElement.classList.remove("dark");
-      setIsDark(false);
-    } else {
-      document.documentElement.classList.add("dark");
-      setIsDark(true);
-    }
-  };
   return (
     <div
       className={
@@ -29,10 +22,10 @@ const NavbarMobile = (props: {
       <button
         className="dark:text-white buttonDarkMode hover:scale-105 flex gap-2 items-center hover:cursor-pointer"
         onClick={() => {
-          handleDarkMode();
+          props.funcHandleDarkMode();
         }}
       >
-        {isDark ? (
+        {props.isDark ? (
           <FontAwesomeIcon icon={faSun} />
         ) : (
           <FontAwesomeIcon icon={faMoon} />
@@ -41,60 +34,34 @@ const NavbarMobile = (props: {
           htmlFor="button"
           className="font-mono dark:text-white hover:cursor-pointer"
         >
-          {isDark ? "Set Light" : "Set Dark"}
+          {props.isDark ? "Set Light" : "Set Dark"}
         </label>
       </button>
+      {sectionOrder
+        .filter((section) => section.isShowInNavbar)
+        .toSorted((a, b) => a.order - b.order)
+        .map((section) => {
+          return (
+            <a
+              key={section.id}
+              href={`#${section.id}`}
+              className={
+                props.isActive == `#${section.id}`
+                  ? "active "
+                  : "dark:text-white "
+              }
+              onClick={() => {
+                props.funcIsOpen(!props.open);
+                props.func(`#${section.id}`);
+              }}
+            >
+              {section.name}
+            </a>
+          );
+        })}
       <a
-        href="#aboutme"
-        className={
-          props.isActive == "#aboutme" ? "active " : "dark:text-white "
-        }
-        onClick={() => props.func("#aboutme")}
-      >
-        AboutMe
-      </a>
-      <a
-        href="#skill"
-        className={props.isActive == "#skill" ? "active " : "dark:text-white "}
-        onClick={() => props.func("#skill")}
-      >
-        Skill
-      </a>
-      <a
-        href="#project"
-        className={
-          props.isActive == "#project" ? "active " : "dark:text-white "
-        }
-        onClick={() => props.func("#project")}
-      >
-        Project
-      </a>
-      <a
-        href="#work"
-        className={props.isActive == "#work" ? "active " : "dark:text-white "}
-        onClick={() => props.func("#work")}
-      >
-        Experience
-      </a>
-      <a
-        href="#certificate"
-        className={
-          props.isActive == "#certificate" ? "active " : "dark:text-white "
-        }
-        onClick={() => props.func("#certificate")}
-      >
-        Certificate
-      </a>
-      <a
-        href="#sendme"
-        className={props.isActive == "#sendme" ? "active " : "dark:text-white "}
-        onClick={() => props.func("#sendme")}
-      >
-        SendMe
-      </a>
-      <a
-        href="https://alifahmaaad.github.io/Portofolio/Resume-Ahmad Alif Sofian.pdf"
-        className="dark:text-white "
+        href="https://alifahmaaad.github.io/Portofolio/CV_AhmadAlifSofian_2025.pdf"
+        className="text-white bg-red-800 rounded p-[0.25rem]"
       >
         Download resume
       </a>

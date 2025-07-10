@@ -1,8 +1,8 @@
+"use client";
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
-import { motion } from "framer-motion";
 import FooterComp from "./component/Footer";
-const Sendme = () => {
+const Sendme = ({ id }: { id: string }) => {
   const SendMessage = (e: React.SyntheticEvent) => {
     e.preventDefault();
     alert("Wait for Response");
@@ -25,7 +25,7 @@ const Sendme = () => {
   };
   const form = useRef<HTMLFormElement>(null);
   return (
-    <div className="h-full dark:bg-[#34356d] bg-[#0b0ed4]" id="sendme">
+    <div className="h-full dark:bg-[#34356d] bg-[#0b0ed4]" id={id}>
       <div className="min-h-[100svh] bg-white dark:bg-gray-800 flex flex-col justify-between">
         <div className="min-h-[85svh] flex items-center container mx-auto px-4 justify-center">
           <div className="w-full max-w-[35rem]">

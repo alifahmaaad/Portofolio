@@ -3,70 +3,70 @@
     "id": 1,
     "title": "Modern JavaScript: ES6 Basics",
     "text": "Learn most fundamental of javascript ES6 features and practice with mini project, learn about reason usingg modern ES6 such a Arrow Function, variable etc.",
-    "imgurl": "/coursera.png",
+    "imgurl": "coursera.png",
     "link": "https://www.coursera.org/account/accomplishments/certificate/L8VWV2KC2RL4"
   },
   {
     "id": 2,
     "title": "Azure: create a REST API using NodeJS Serverless Functions",
     "text": "Create a Function App and Serverless Functions, Create an API out of the Serverless Functions, and Understand route templates",
-    "imgurl": "/coursera.png",
+    "imgurl": "coursera.png",
     "link": "https://www.coursera.org/account/accomplishments/certificate/M3C73E4E79WB"
   },
   {
     "id": 3,
     "title": "Front End Development Libraries",
     "text": "Learn basic Bootstrap, add logic into css, learn basic Sass, and build m  ini project using ReactJs with ReduxJs.",
-    "imgurl": "/freecodecamp.png",
+    "imgurl": "freecodecamp.png",
     "link": "https://freecodecamp.org/certification/fcc393400e6-f2e2-4c59-bd27-e7aeed1a796e/front-end-development-libraries"
   },
   {
     "id": 4,
     "title": "Back End Development and APIs",
     "text": "learn how to write back end apps with Node.js and npm. Build web applications with the Express framework, and learn using MongoDB.",
-    "imgurl": "/freecodecamp.png",
+    "imgurl": "freecodecamp.png",
     "link": "https://freecodecamp.org/certification/fcc393400e6-f2e2-4c59-bd27-e7aeed1a796e/back-end-development-and-apis"
   },
   {
     "id": 5,
     "title": "TypeScript Arrays",
     "text": "Declare and Initialisation of Arrays in TypeScript, Understand Single and Two dimensional Arrays in TypeScript, Access Array Elements  and Understand TypeScript Array methods",
-    "imgurl": "/coursera.png",
+    "imgurl": "coursera.png",
     "link": "https://www.coursera.org/account/accomplishments/certificate/V3VEE8P7G44M"
   },
   {
     "id": 6,
     "title": "Increase SEO Traffic with WordPress",
     "text": "Update website for search engine optimization.Edit webpage content, links, and images.Edit headings, permalinks, and visibility.",
-    "imgurl": "/coursera.png",
+    "imgurl": "coursera.png",
     "link": "https://www.coursera.org/account/accomplishments/certificate/V3VEE8P7G44M"
   },
   {
     "id": 7,
     "title": "Command Line in Linux",
     "text": "List files and directories using ls,Use the cd command to change directories. Use touch, copy, mkdir, and rm to create and remove files and directories",
-    "imgurl": "/coursera.png",
+    "imgurl": "coursera.png",
     "link": "https://www.coursera.org/account/accomplishments/certificate/Q52K6JVYUL3G"
   },
   {
     "id": 8,
     "title": "Belajar Prinsip Pemrograman SOLID",
     "text": "understand how to write good code with the OOP (object-oriented programming) paradigm, understand the SOLID principle as a solution that can be used to solve the problem.",
-    "imgurl": "/dicoding.webp",
+    "imgurl": "dicoding.webp",
     "link": "https://www.dicoding.com/certificates/MRZMQY9WNPYQ"
   },
   {
     "id": 9,
     "title": "Belajar dasar pemrograman Web",
     "text": "learn basic web programming, learn about HTML and CSS as the foundation for making websites. At the end of the training, create a simple website using programming code.",
-    "imgurl": "/dicoding.webp",
+    "imgurl": "dicoding.webp",
     "link": "https://www.dicoding.com/certificates/1OP8D70K2PQK"
   },
   {
     "id": 10,
     "title": "Belajar Membuat Aplikasi Android untuk Pemula",
     "text": "Introduction to Android Studio, creating simple applications, learning various types of intents, learning various types of layouts, learn to use styles and themes and learn about recyclerview and final project submission in the form of an Android-based application",
-    "imgurl": "/dicoding.webp",
+    "imgurl": "dicoding.webp",
     "link": "https://www.dicoding.com/certificates/1RXY4W5J3PVM"
   }
 ]
