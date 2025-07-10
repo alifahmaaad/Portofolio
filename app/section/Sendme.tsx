@@ -1,11 +1,13 @@
 "use client";
 import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import FooterComp from "./component/Footer";
+
 const Sendme = ({ id }: { id: string }) => {
+  const [loading, setLoading] = useState(false);
   const SendMessage = (e: React.SyntheticEvent) => {
     e.preventDefault();
-    alert("Wait for Response");
+    setLoading(true);
     emailjs
       .sendForm(
         "service_ikbyhsd",
@@ -14,20 +16,27 @@ const Sendme = ({ id }: { id: string }) => {
         "3C1j0goxlvghwX2g9"
       )
       .then(
-        (result) => {
+        () => {
           alert("Message sent!!");
-          console.log(result.text);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          alert("Sorry, failed to send!!");
         }
-      );
+      )
+      .finally(() => setLoading(false));
   };
   const form = useRef<HTMLFormElement>(null);
   return (
     <div className="h-full dark:bg-[#34356d] bg-[#0b0ed4]" id={id}>
       <div className="min-h-[100svh] bg-white dark:bg-gray-800 flex flex-col justify-between">
         <div className="min-h-[85svh] flex items-center container mx-auto px-4 justify-center">
+          {loading && (
+            <div className="absolute min-h-[85svh] w-full bg-black/40 z-[1] text-white">
+              <div className="flex items-center justify-center min-h-[85svh] font-bold text-xl">
+                Loading...
+              </div>
+            </div>
+          )}
           <div className="w-full max-w-[35rem]">
             <header className="font-bold text-[#0b0ed4] dark:text-white text-xl md:text-3xl lg:text-5xl py-5   ">
               <h1 className="text-ellipsis">Lets Talk.</h1>
