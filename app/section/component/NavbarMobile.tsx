@@ -39,7 +39,8 @@ const NavbarMobile = (props: {
       </button>
       {sectionOrder
         .filter((section) => section.isShowInNavbar)
-        .toSorted((a, b) => a.order - b.order)
+        .slice()
+        .sort((a, b) => a.order - b.order)
         .map((section) => {
           return (
             <a

@@ -5,7 +5,7 @@
     "role": "Backend Developer",
     "year": " Jan 2024 – Juli 2025",
     "companie": "PT Phincon – Jakarta, Indonesia (On Site)",
-    "text": "- Develop and maintain web api middleware services for the MyTelkomsel app using Node.js and Express.js to bridge communication between mobile applications and core backend APIs.\n - Implement request validation, error handling, and consistent response formatting. Write unit tests with Jest to improve code reliability and support mobile team development./n - Troubleshoot and resolve production issues./n -Support backend configuration responses for SIT and UAT testing environments."
+    "text": "- Develop and maintain web api middleware services for the MyTelkomsel app using Node.js and Express.js to bridge communication between mobile applications and core backend APIs.\n - Implement request validation, error handling, and consistent response formatting. Write unit tests with Jest to improve code reliability and support mobile team development.\n - Troubleshoot and resolve production issues.\n -Support backend configuration responses for SIT and UAT testing environments."
   },
   {
     "imgurl": "phincon.jpeg",

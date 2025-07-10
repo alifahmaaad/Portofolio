@@ -14,7 +14,7 @@ const AllCertificate = () => {
               <h1 className="text-ellipsis">My Certificate.</h1>
             </header>
             <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] sm:gap-[2rem] py-1 sm:py-5 m-0 ">
-              {Object.entries(DataCertificate).map(([key, i]) => (
+              {Object.entries(DataCertificate)?.map(([key, i]) => (
                 <Cardbox
                   key={key}
                   imgurl={i.imgurl}

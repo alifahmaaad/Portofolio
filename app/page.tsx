@@ -32,23 +32,25 @@ const allJsonData = {
 export default function Home() {
   return (
     <main className="bg-white dark:bg-gray-800 overflow-x-hidden">
-      {SectionOrder.toSorted((a, b) => a.order - b.order).map((section) => {
-        const SectionComp =
-          allComponent[section.CompName as keyof typeof allComponent];
-        return (
-          <SectionComp
-            title={section?.props?.title || ""}
-            data={
-              allJsonData[
-                section?.props?.jsonName as keyof typeof allJsonData
-              ] || []
-            }
-            link={section?.props?.link || ""}
-            key={section.name}
-            id={section?.id || ""}
-          />
-        );
-      })}
+      {SectionOrder?.slice()
+        .sort((a, b) => a.order - b.order)
+        ?.map((section) => {
+          const SectionComp =
+            allComponent[section.CompName as keyof typeof allComponent];
+          return (
+            <SectionComp
+              title={section?.props?.title || ""}
+              data={
+                allJsonData[
+                  section?.props?.jsonName as keyof typeof allJsonData
+                ] || []
+              }
+              link={section?.props?.link || ""}
+              key={section.name}
+              id={section?.id || ""}
+            />
+          );
+        })}
     </main>
   );
 }
