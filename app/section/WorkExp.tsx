@@ -1,7 +1,15 @@
 import Jobcard from "./component/Jobcard";
-import DataWorkExp from "./JSONData/WorkExp.json";
 
-const WorkExp = ({ id }: { id: string }) => {
+type dataWorkExpType = {
+  imgurl: string;
+  id: number;
+  role: string;
+  year: string;
+  companie: string;
+  text: string;
+};
+
+const WorkExp = ({ id, data }: { id: string; data: dataWorkExpType[] }) => {
   return (
     <div className="h-full dark:bg-[#34356d] bg-[#0b0ed4] py-5" id={id}>
       <div className="min-h-[40rem] flex flex-col container mx-auto px-4 justify-center items-center max-w-[60rem] py-10">
@@ -9,7 +17,7 @@ const WorkExp = ({ id }: { id: string }) => {
           My Work Experience.
         </span>
         <div>
-          {Object.entries(DataWorkExp).map(([key, i]) => (
+          {Object.entries(data).map(([key, i]) => (
             <Jobcard
               key={key}
               imgurl={i.imgurl}

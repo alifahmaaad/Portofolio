@@ -1,9 +1,10 @@
-import Portofolio from "../section/JSONData/Portofolio.json";
 import Cardbox from "../section/component/Cardbox";
 import GoToHomePage from "../section/microComponent/GoToHomePage";
 import "../body.css";
+import { getPortofolio } from "../gdriveHelper";
 
-const AllPortofolio = () => {
+const AllPortofolio = async () => {
+  const dataPortofolio = await getPortofolio();
   return (
     <div className="h-full min-h-screen bg-white dark:bg-gray-800">
       <div>
@@ -15,7 +16,7 @@ const AllPortofolio = () => {
               <h3 className="text-xl font-normal pt-1 px-2">My Porotoflio</h3>
             </header>
             <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] sm:gap-[2rem] py-1 sm:py-5 m-0 ">
-              {Object.entries(Portofolio).map(([key, i]) => (
+              {Object.entries(dataPortofolio).map(([key, i]) => (
                 <Cardbox
                   key={key}
                   imgurl={i.imgurl}

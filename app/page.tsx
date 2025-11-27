@@ -8,49 +8,44 @@ import WorkExp from "./section/WorkExp";
 import Navcomp from "./section/component/Navcomp";
 import PaginationNav from "./section/component/PaginationNav";
 
-import Portofolio from "./section/JSONData/Portofolio.json";
-import ProjectExp from "./section/JSONData/ProjectExp.json";
-import SectionOrder from "./section/JSONData/SectionOrder.json";
+import {
+  getCertificate,
+  getPortofolio,
+  getProject,
+  getSkills,
+  getWorkExp,
+} from "./gdriveHelper";
 
-const allComponent = {
-  PaginationNav,
-  Navcomp,
-  Slide1,
-  AboutMe,
-  WorkExp,
-  Skill,
-  Project,
-  Certificate,
-  Sendme,
-};
-
-const allJsonData = {
-  Portofolio,
-  ProjectExp,
-};
-
-export default function Home() {
+const Home = async () => {
+  const dataCertificate = await getCertificate();
+  const dataPortofolio = await getPortofolio();
+  const dataProjectExp = await getProject();
+  const dataWorkExp = await getWorkExp();
+  const dataSkills = await getSkills();
   return (
     <main className="bg-white dark:bg-gray-800 overflow-x-hidden">
-      {SectionOrder?.slice()
-        .sort((a, b) => a.order - b.order)
-        ?.map((section) => {
-          const SectionComp =
-            allComponent[section.CompName as keyof typeof allComponent];
-          return (
-            <SectionComp
-              title={section?.props?.title || ""}
-              data={
-                allJsonData[
-                  section?.props?.jsonName as keyof typeof allJsonData
-                ] || []
-              }
-              link={section?.props?.link || ""}
-              key={section.name}
-              id={section?.id || ""}
-            />
-          );
-        })}
+      <PaginationNav />
+      <Navcomp />
+      <Slide1 id="slide1" />
+      <AboutMe id="aboutme" />
+      <WorkExp id="work" data={dataWorkExp} />
+      <Skill id="skill" data={dataSkills} />
+      <Project
+        id="project"
+        title="Projects"
+        link="AllProject"
+        data={dataProjectExp}
+      />
+      <Project
+        id="portofolio"
+        title="Portofolio"
+        link="AllPortofolio"
+        data={dataPortofolio}
+      />
+      <Certificate id="certificate" data={dataCertificate} />
+      <Sendme id="sendme" />
     </main>
   );
-}
+};
+
+export default Home;

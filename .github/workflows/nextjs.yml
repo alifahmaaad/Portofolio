@@ -30,6 +30,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Decode Google Service Account
+        run: |
+          echo "$GCP_SERVICE_ACCOUNT" | base64 -d > service-account.json
+        env:
+          GCP_SERVICE_ACCOUNT: ${{ secrets.GCP_SERVICE_ACCOUNT }}
       - uses: actions/setup-node@v4
         with:
           node-version: "18"

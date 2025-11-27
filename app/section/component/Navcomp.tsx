@@ -173,7 +173,7 @@ const Navcomp = () => {
             className={
               defaultText + "rounded-md bg-white dark:bg-gray-800 px-2 py-1 "
             }
-            href="https://alifahmaaad.github.io/Portofolio/CV_AhmadAlifSofian_2025.pdf"
+            href="https://drive.google.com/file/d/12m2T1lEx9RmIyah9HoPuQnvka-OmahCP/view?usp=sharing"
             target="_blank"
           >
             Click it! Download Resume

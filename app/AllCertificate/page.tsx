@@ -1,9 +1,10 @@
-import DataCertificate from "./../section/JSONData/Certificate.json";
 import Cardbox from "../section/component/Cardbox";
 import GoToHomePage from "../section/microComponent/GoToHomePage";
 import "../body.css";
+import { getCertificate } from "../gdriveHelper";
 
-const AllCertificate = () => {
+const AllCertificate = async () => {
+  const dataCertificate = await getCertificate();
   return (
     <div className="h-full min-h-screen bg-white dark:bg-gray-800">
       <div>
@@ -14,7 +15,7 @@ const AllCertificate = () => {
               <h1 className="text-ellipsis">My Certificate.</h1>
             </header>
             <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] sm:gap-[2rem] py-1 sm:py-5 m-0 ">
-              {Object.entries(DataCertificate)?.map(([key, i]) => (
+              {Object.entries(dataCertificate)?.map(([key, i]) => (
                 <Cardbox
                   key={key}
                   imgurl={i.imgurl}

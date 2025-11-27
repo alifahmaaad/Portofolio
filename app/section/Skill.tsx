@@ -1,7 +1,9 @@
 import Skillcard from "./component/Skillcard";
 import SkillMotionComp from "./microComponent/SkillMotionComp";
-import DataSkills from "./JSONData/Skills.json";
-const Skill = ({ id }: { id: string }) => {
+
+type dataSkillsType = { name: string; list: any[] };
+
+const Skill = ({ id, data }: { id: string; data: dataSkillsType[] }) => {
   return (
     <div className="h-full pb-[10rem] min-h-[50svh] pt-20" id={id}>
       <SkillMotionComp>
@@ -11,7 +13,7 @@ const Skill = ({ id }: { id: string }) => {
           </span>
         </div>
         <div className="flex justify-center flex-col lg:flex-row flex-wrap gap-10">
-          {DataSkills.map((skill) => (
+          {data.map((skill) => (
             <div className="w-full" key={skill.name}>
               <h1 className="text-[#0b0ed4] dark:text-white p-2 lg:text-xl font-bold">
                 {skill.name}

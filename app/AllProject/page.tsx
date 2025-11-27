@@ -1,9 +1,10 @@
-import DataProjectExp from "./../section/JSONData/ProjectExp.json";
 import Cardbox from "../section/component/Cardbox";
 import GoToHomePage from "../section/microComponent/GoToHomePage";
 import "../body.css";
+import { getProject } from "../gdriveHelper";
 
-const AllProject = () => {
+const AllProject = async () => {
+  const DataProjectExp = await getProject();
   return (
     <div className="h-full min-h-screen bg-white dark:bg-gray-800">
       <div>

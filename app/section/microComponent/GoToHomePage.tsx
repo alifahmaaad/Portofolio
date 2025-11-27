@@ -16,7 +16,7 @@ const GoToHomePage = () => {
   }, []);
 
   const changeBackground = () => {
-    if (typeof window !== "undefined") {
+    if (globalThis.window !== undefined) {
       if (window.scrollY >= 66) {
         setIsScroll(true);
       } else {

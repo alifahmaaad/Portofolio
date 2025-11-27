@@ -61,7 +61,7 @@ const NavbarMobile = (props: {
           );
         })}
       <a
-        href="https://alifahmaaad.github.io/Portofolio/CV_AhmadAlifSofian_2025.pdf"
+        href="https://drive.google.com/file/d/12m2T1lEx9RmIyah9HoPuQnvka-OmahCP/view?usp=sharing"
         className="text-white bg-red-800 rounded p-[0.25rem]"
       >
         Download resume
