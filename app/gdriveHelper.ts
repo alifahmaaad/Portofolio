@@ -23,9 +23,14 @@ type dataCertificateType = {
 };
 
 export const getCertificate = async () => {
-  return (await getJsonFromDrive(
-    "1j2-msHsVhrjm7Pg7u8WTtihOEEll8Tok"
-  )) as dataCertificateType[];
+  try {
+    return (await getJsonFromDrive(
+      "1j2-msHsVhrjm7Pg7u8WTtihOEEll8Tok"
+    )) as dataCertificateType[];
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
 };
 
 type dataProjectType = {
@@ -36,15 +41,25 @@ type dataProjectType = {
 };
 
 export const getPortofolio = async () => {
-  return (await getJsonFromDrive(
-    "1BP_-83esX2DepuGBxKK0II4_NOWOI1PR"
-  )) as dataProjectType[];
+  try {
+    return (await getJsonFromDrive(
+      "1BP_-83esX2DepuGBxKK0II4_NOWOI1PR"
+    )) as dataProjectType[];
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
 };
 
 export const getProject = async () => {
-  return (await getJsonFromDrive(
-    "11oXQ3sKK4kP1mXh6mF1TRurfjjHPDOOs"
-  )) as dataProjectType[];
+  try {
+    return (await getJsonFromDrive(
+      "11oXQ3sKK4kP1mXh6mF1TRurfjjHPDOOs"
+    )) as dataProjectType[];
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
 };
 
 type dataWorkExpType = {
@@ -57,15 +72,36 @@ type dataWorkExpType = {
 };
 
 export const getWorkExp = async () => {
-  return (await getJsonFromDrive(
-    "1W44sJkbnpSOxCdO1TaMlIUaJL5CXJFY2"
-  )) as dataWorkExpType[];
+  try {
+    return (await getJsonFromDrive(
+      "1W44sJkbnpSOxCdO1TaMlIUaJL5CXJFY2"
+    )) as dataWorkExpType[];
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
 };
 
 type dataSkillsType = { name: string; list: any[] };
 
 export const getSkills = async () => {
-  return (await getJsonFromDrive(
-    "1zpAg5bpQtOcY6iUWs1GuSGWfD0KFtiNJ"
-  )) as dataSkillsType[];
+  try {
+    return (await getJsonFromDrive(
+      "1zpAg5bpQtOcY6iUWs1GuSGWfD0KFtiNJ"
+    )) as dataSkillsType[];
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
+
+export const getAboutMe = async () => {
+  try {
+    return (await getJsonFromDrive("1j0x06w6ox-OQuHLC9JF-XR5H5fahyFmD")) as {
+      text: string;
+    };
+  } catch (error) {
+    console.log(error);
+    return { text: "" };
+  }
 };

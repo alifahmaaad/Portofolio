@@ -2,9 +2,9 @@
 const nextConfig = {
   output: "export",
   images: {
-    unoptimized: true, // kalo pakai <Image /> Next bawaan
+    unoptimized: true,
   },
-  basePath: "/Portofolio", // <- kalau deploy ke GitHub Pages, sesuaikan nama repo kamu
+  basePath: "/Portofolio",
   assetPrefix: "/Portofolio/",
 };
 

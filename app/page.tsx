@@ -9,6 +9,7 @@ import Navcomp from "./section/component/Navcomp";
 import PaginationNav from "./section/component/PaginationNav";
 
 import {
+  getAboutMe,
   getCertificate,
   getPortofolio,
   getProject,
@@ -22,12 +23,13 @@ const Home = async () => {
   const dataProjectExp = await getProject();
   const dataWorkExp = await getWorkExp();
   const dataSkills = await getSkills();
+  const dataAboutMe = await getAboutMe();
   return (
     <main className="bg-white dark:bg-gray-800 overflow-x-hidden">
       <PaginationNav />
       <Navcomp />
       <Slide1 id="slide1" />
-      <AboutMe id="aboutme" />
+      <AboutMe id="aboutme" data={dataAboutMe} />
       <WorkExp id="work" data={dataWorkExp} />
       <Skill id="skill" data={dataSkills} />
       <Project
