@@ -23,9 +23,10 @@ const Jobcard = (props: {
         <h2 className="font-bold text-sm sm:text-md text-white">
           {props.year}
         </h2>
-        <p className="whitespace-pre-line text-white py-2 overflow-hidden text-sm sm:text-md">
-          {props.text}
-        </p>
+        <p
+          className="whitespace-pre-line text-white py-2 overflow-hidden text-sm sm:text-md"
+          dangerouslySetInnerHTML={{ __html: props.text }}
+        />
       </div>
     </div>
   );
