@@ -1,5 +1,3 @@
-"use client";
-import { useEffect, useState } from "react";
 import ProjectBox from "../component/ProjectBox";
 
 interface Project {
@@ -10,16 +8,10 @@ interface Project {
 }
 
 const ProjectFuncComp = ({ data }: { data: Project[] }) => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCardmaxindex(window.innerWidth >= 768 ? 6 : 4);
-    }
-  }, []);
-  const [cardmaxindex, setCardmaxindex] = useState<number>();
   return (
     <>
       {Object.entries(data)
-        .slice(0, cardmaxindex)
+        .slice(0, 4)
         .map(([key, i]) => (
           <ProjectBox
             key={key}
