@@ -34,30 +34,32 @@ const ProjectBox = (props: {
           </p>
         </div>
 
-        <div className="mt-2 flex flex-col items-start gap-1">
-          <a
-            href={props.link}
-            target={props.link !== "#" ? "_blank" : "_self"}
-            className="group/link flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-900 dark:text-white"
-          >
-            <span>{props.linktext || "View Case Study"}</span>
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform stroke-[3]"
+        {props.link && (
+          <div className="mt-2 flex flex-col items-start gap-1">
+            <a
+              href={props.link}
+              target={props.link !== "#" ? "_blank" : "_self"}
+              className="group/link flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-900 dark:text-white"
             >
-              <path
-                d="M7 17L17 7M17 7H7M17 7V17"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
-          <div className="h-[2px] w-4 bg-[#0b0ed4] dark:bg-violet-500 group-hover:w-16 transition-all duration-500 rounded-full" />
-        </div>
+              <span>{props.linktext || "View Case Study"}</span>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform stroke-[3]"
+              >
+                <path
+                  d="M7 17L17 7M17 7H7M17 7V17"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <div className="h-[2px] w-4 bg-[#0b0ed4] dark:bg-violet-500 group-hover:w-16 transition-all duration-500 rounded-full" />
+          </div>
+        )}
       </div>
     </div>
   );

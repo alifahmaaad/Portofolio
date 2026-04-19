@@ -8,7 +8,7 @@ const Slide1 = ({ id }: { id: string }) => {
     >
       <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[70%] rounded-full pointer-events-none blur-[120px] bg-blue-500/10 dark:bg-violet-900/30 transition-all duration-700" />
       <div className="absolute inset-0 pointer-events-none opacity-[0.1] dark:opacity-[0.05] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:5rem_5rem]" />
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03] mix-blend-overlay" />
       <div className="relative z-10 w-full px-6 lg:px-[5rem] 2xl:px-[15rem] pt-20 pb-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <article className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
